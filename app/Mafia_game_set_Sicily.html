@@ -85,32 +85,67 @@
         <div class="container">
             <div class="goods__row">
                 <div class="goods__images">
-                    <!-- <div class="images__big"></div>
-                    <div class="images__small"></div> -->
+                    <div class="swiper-container goodsSwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/7.jpg" />
+                            </div>
+                        </div>
+                    </div>
 
-                </div>
+                    <div thumbsSlider="" class="swiper-container goodsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/src/goods1/7.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div> <!-- END goods images -->
+
                 <div class="goods__info"></div>
             </div>
         </div>
     </div>
 
 
-    <div class="cssSlider">
-        <ul class="slides">
-            <li id="slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-            <li id="slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-            <li id="slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-            <li id="slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-            <li id="slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" alt="" /></li>
-        </ul>
-        <ul class="thumbnails">
-            <li><a href="#slide1"><img src="https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?auto=format&fit=crop&w=840&q=60" /></a></li>
-            <li><a href="#slide2"><img src="https://images.unsplash.com/photo-1433256392503-913cee5877e3?auto=format&fit=crop&w=840&q=60" /></a></li>
-            <li><a href="#slide3"><img src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?auto=format&fit=crop&w=840&q=60" /></a></li>
-            <li><a href="#slide4"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=840&q=60" /></a></li>
-            <li><a href="#slide5"><img src="https://images.unsplash.com/photo-1453284441168-8780c9f52097?auto=format&fit=crop&w=840&q=60" /></a></li>
-        </ul>
-    </div>
 
     <footer class="footer">
         <div class="container">
@@ -178,7 +213,7 @@
                     </form>
                     <div class="form__politica">
                         <p>Нажимая кнопку “Подписаться” вы соглашаетесь</p> 
-                        <p>с <a href="#popup" class="form__politica__link popup-link">Политикой конфиденциальности </a> сайта</p>
+                        <p>с <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a> сайта</p>
                     </div>
                     <div class="form__payment">
                         <img src="images/src/payment.svg" alt="payment" title="payment">
@@ -189,22 +224,23 @@
         </div>
     </footer>
 
-    <div id="popup" class="popup">
-        <div class="popup__body">
-            <div class="popup__content">
-                <a href="#footer" class="close-popup popup__close" >X</a>
-                <div class="popup__title">Политика конфидициальности</div>
-                <div class="popup__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, perferendis, 
-                incidunt error est reiciendis non nulla saepe repellat similique dolores illo, accusantium laboriosam
-                minima. Possimus sunt odio optio temporibus deleniti consectetur quo animi dolorum illum libero. 
-                Quae odit fugit rerum.</div>
-            </div>
-        </div>
-    </div>
+<!-- Несколько модальных окон -->
+
+<div class="modal" data-modal="1">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               
+    viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <p class="modal__title">Заголовок окна 1</p>
+ </div>
+ 
+ 
+ <!-- Подложка под модальным окном -->
+ <div class="overlay js-overlay-modal"></div>
 
 
-        <!-- Подключаем скрипты проекта -->
+    <!-- Подключаем скрипты проекта -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="js/app.min.js"></script>
+    <script src="js/app.min.js"></script>
+	
 </body>
 </html>
