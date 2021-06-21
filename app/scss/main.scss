@@ -900,6 +900,7 @@
 // Блок преимуществ
 .service {
   margin: 50px 0;
+  text-align: center;
 }
 
 .serv__title {
@@ -1013,10 +1014,10 @@
 
 // Карточка товара
 .goods__row {
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-right: -15px;
-    // margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 
     .goods__images {
     flex: 0 0 41.6666666667%;
@@ -1051,6 +1052,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
   }
 
   .swiper-container {
@@ -1098,6 +1100,35 @@
     color: #000;
   }
 }
+
+.goods__info {
+  background-color: #fff;
+
+  .card__product-header {
+    display: flex;
+  }
+}
+
+
+
+
+.price__box {
+
+  .price__descr {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(18, 33, 45, 0.7);
+    letter-spacing: -0.1px;
+    line-height: 33px;
+  }
+
+  .price-count {
+    font-size: 20px;
+    letter-spacing: -0.142857px;
+    line-height: 22px;
+  }
+}
+
 
 
 

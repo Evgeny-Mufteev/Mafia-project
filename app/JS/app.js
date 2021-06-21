@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Слайдер в карточке товара
 
-    var swiper = new Swiper(".goodsSwiper", {
+    var goodsSwiper = new Swiper(".goodsSwiper", {
       loop: true,
       spaceBetween: 10,
       slidesPerView: 4,
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
     });
-    var swiper2 = new Swiper(".goodsSwiper2", {
+    var goodsSwiper2 = new Swiper(".goodsSwiper2", {
       loop: true,
       spaceBetween: 10,
       navigation: {
@@ -130,9 +130,39 @@ document.addEventListener('DOMContentLoaded', function() {
         prevEl: ".swiper-button-prev",
       },
       thumbs: {
-        swiper: swiper,
+        swiper: goodsSwiper,
       },
     });
 
 
   // END Слайдер в карточке товара
+
+  // Сетчик товаров
+
+  const counter = function () {
+    const btns = document.querySelectorAll('.counter__btn');
+  
+  
+    btns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        const direction = this.dataset.direction;
+        const inp = this.parentElement.querySelector('.counter__value');
+        const currentValue = +inp.value;
+        let newValue;
+  
+        if (direction === 'plus') {
+          newValue = currentValue + 1;
+        } else {
+          newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+        }
+  
+        inp.value = newValue;
+      })
+    })
+  
+  }
+  
+  counter();
+
+  // END Сетчик товаров
+
