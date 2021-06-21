@@ -537,7 +537,21 @@
 // ::-webkit-scrollbar-thumb:vertical:hover {background:#09459F;}
 // ::-webkit-scrollbar-thumb:horizontal:hover {background:#09459F;}
 
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 53px;
+  background-color: #09459F;
+  border-radius: 3px;
 
+  &:hover {
+    color: #ffffff;
+    background-color: rgb(9, 78, 228);
+    transition: all 0.4s ease;
+  }
+}
 
 
 // Секция о нас
@@ -754,7 +768,7 @@
   
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -792,6 +806,10 @@
   right: 20px;
   fill: #444;
   cursor: pointer;
+}
+
+.js-open-modal {
+  color: #e3e3e3;
 }
 
 
@@ -1106,6 +1124,10 @@
 
   .card__product-header {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
   }
 }
 
@@ -1129,7 +1151,40 @@
   }
 }
 
+.qib-container {
 
+  .counter__btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    height: 30px !important;
+    padding-bottom: 1px !important;
+    background: #fff;
+    border-color: #B7BCC0;
+    border-radius: 2px !important;
+    cursor: pointer;
+  }
+
+  .counter__value {
+    width: 20px;
+    height: 35px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-width: 1px 0;
+    border-radius: 0;
+    outline: none;
+  }
+}
+
+.text__warning {
+  color: #ffc107;
+}
 
 
 // END Карточка товара
