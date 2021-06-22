@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
       loop: true,
       spaceBetween: 10,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".goods-next",
+        prevEl: ".goods-prev",
       },
       thumbs: {
         swiper: goodsSwiper,
