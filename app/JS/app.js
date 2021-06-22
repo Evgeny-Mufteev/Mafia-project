@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const counter = function () {
     const btns = document.querySelectorAll('.counter__btn');
   
-  
     btns.forEach(btn => {
       btn.addEventListener('click', function () {
         const direction = this.dataset.direction;
@@ -161,8 +160,40 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   
   }
-  
   counter();
 
   // END Сетчик товаров
+
+  // Создание табов
+  const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
+  const tabsItems = document.querySelectorAll(".tabs__item");
+
+  tabsBtn.forEach(function(item) {
+    item.addEventListener("click", function(){
+      let currentBtn = item;
+      let tabId = currentBtn.getAttribute("data-tab");
+      let currentTab = document.querySelector(tabId);
+
+      if( ! currentBtn.classList.contains('active')) {
+        
+      tabsBtn.forEach(function(item) {
+        item.classList.remove('active');
+      });
+
+      tabsItems.forEach(function(item) {
+        item.classList.remove('active')
+      });
+
+      currentBtn.classList.add('active');
+      currentTab.classList.add('active');
+      }
+
+
+
+    });
+  });
+
+
+
+    // END Создание табов
 

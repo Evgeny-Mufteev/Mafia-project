@@ -1034,8 +1034,7 @@
 .goods__row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    justify-content: space-between;
     margin-bottom: 30px;
 
     .goods__images {
@@ -1095,7 +1094,7 @@
   .goodsSwiper {
     height: 20%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
 
   .goodsSwiper .swiper-slide {
@@ -1118,25 +1117,18 @@
 
 }
 
-.goods-next {
+.goods-arrow {
   position: absolute;
   top: 9px;
   z-index: 25;
   border: 1px solid #B7BCC0;
-  padding: 31px 11px;
+  padding: 34px 11px;
   cursor: pointer;
   background: #f3f3f3;
 }
 
 .goods-prev {
-  z-index: 25;
-  position: absolute;
-  top: 9px;
   right: 0px;
-  border: 1px solid #B7BCC0;
-  padding: 31px 11px;
-  cursor: pointer;
-  background: #f3f3f3;
 }
 
 .goods__info {
@@ -1171,7 +1163,7 @@
   }
 }
 
-.qib-container {
+.qib-counter {
 
   .counter__btn {
     display: inline-block;
@@ -1224,6 +1216,50 @@
 
 .categories__links {
   color: #12212D;
+}
+
+.tabs {
+  margin-top: 30px;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tabs__nav-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.tabs__nav-btn:last-child {
+  border-right: none;
+}
+
+.tabs__nav-btn:hover {
+  background-color: #fcfcfc;
+}
+
+.tabs__nav-btn.active {
+  color: #12212D;
+  border-bottom: 4px solid #09459f;
+}
+
+.tabs__content {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs__item.active {
+  display: block;
 }
 
 // END Карточка товара
