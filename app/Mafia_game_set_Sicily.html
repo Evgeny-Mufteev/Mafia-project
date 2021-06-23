@@ -20,7 +20,7 @@
                             <a href="index.html"><img src="images/src/logo/logo_header.png" alt="logo"></a>
                             <h1 class="logo__title">Реквизиты для игры в Мафию</h1>
                         </div>
-                        <form class="search">
+                        <form class="search" action="url">
                             <input class="search__input" type="text" placeholder="Поиск товаров">
                             <button class="btn__search" type="submit" value="поиск">
                                 <span>
@@ -242,21 +242,55 @@
             
                         <div class="tabs__item" id="tab_3">
                             <div class="tab__reviews">
+                                <div class="reviews__feedback">
 
-                                <div class="reviews__content">
-                                    <div class="reviews__title">
-                                            <div class="reviews__client">Гость</div>
-                                            <div class="reviews__rating">
-                                                <img src="images/src/rating.svg" alt="рейтинг">
-                                            </div>
+                                    <div class="reviews__content">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Гость</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и 
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
                                     </div>
-                                    <div class="reviews__text">
-                                        <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и 
-                                        просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+    
+                                    <div class="reviews__content">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Вадим</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и 
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <button type="submit" class="btn__reviews">Показать еще Отзывы</button>
+
+                                </div> <!-- END reviews feedback -->
+                                
+
+                                <div class="reviews__form" action="url">
+                                    <div class="trulala">
+                                        <form class="reviews__wrap">
+                                            <p>ФИО</p>
+                                            <input type="text" class="input__reviews" required>
+                                            <p>E-mail</p>
+                                            <input type="email" class="input__reviews" required>
+                                            <p>Ваш комментарий</p>
+                                            <input type="text" class="input__reviews">
+                                            <button type="submit" class="btn btn__form">Отправить</button>
+                                        </form>
                                     </div>
                                 </div>
 
-                                <div class="reviews__form"></div>
                             </div>
                         </div>
                     </div>
@@ -409,7 +443,7 @@
 
                     <div class="footer__form">
                         <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="" method="post" name="form" >
+                        <form class="form" action="url" method="post" name="form" >
                             <input class="input-text" placeholder="Email"></input>
                             <input class="btn" id="submit" value="Подписаться" type="submit" />
                         </form>
