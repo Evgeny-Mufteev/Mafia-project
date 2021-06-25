@@ -141,26 +141,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const counter = function () {
     const btns = document.querySelectorAll('.counter__btn');
-  
+
     btns.forEach(btn => {
       btn.addEventListener('click', function () {
         const direction = this.dataset.direction;
         const inp = this.parentElement.querySelector('.counter__value');
         const currentValue = +inp.value;
         let newValue;
-  
+
         if (direction === 'plus') {
           newValue = currentValue + 1;
         } else {
           newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
         }
-  
+
         inp.value = newValue;
       })
     })
-  
+
   }
   counter();
+
 
   // END Сетчик товаров
 
@@ -175,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let currentTab = document.querySelector(tabId);
 
       if( ! currentBtn.classList.contains('active')) {
-        
+
       tabsBtn.forEach(function(item) {
         item.classList.remove('active');
       });
@@ -192,8 +193,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
   });
-
-
-
     // END Создание табов
+
+
+
+    let coll = document.getElementsByClassName('collapsible');
+    for (let i = 0; i < coll.length; i++){
+    coll[i].addEventListener('click', function() {
+    this.classList.toggle('active');
+    let collapse = this.previousElementSibling;
+    if (collapse.style.maxHeight) {
+      collapse.style.maxHeight = null;
+    }else{
+      collapse.style.maxHeight = collapse.scrollHeight + 'px'}
+    })
+    }
+
+
+
+
+
+
+  const toper = function () {
+    function scrollTo(element) {
+      window.scroll({
+        left: 0,
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
+
+    let button = document.querySelector(".toTop");
+    let header = document.querySelector("#header");
+
+    button.addEventListener("click", () => {
+      scrollTo(header);
+    });
+  };
+
+  toper();
 

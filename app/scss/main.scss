@@ -75,12 +75,12 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+
   *::before,  *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
     font-size: 14px;
@@ -91,7 +91,7 @@
   body.lock {
     overflow: hidden;
   }
-  
+
   h1,  h2,  h3,  h4,  h5,  h6 {
     margin: 0;
   }
@@ -99,7 +99,7 @@
   p {
     margin:0;
   }
-  
+
   ul {
     margin: 0;
     padding: 0;
@@ -137,7 +137,7 @@
       font-size: 14px;
       margin-bottom: 11px;
     }
- 
+
     .search__input {
         padding-top: 14px;
         padding-bottom: 14px;
@@ -256,7 +256,7 @@
     display: block;
     line-height: 1;
   }
-  
+
   .nav__item a::after {
     content: '';
     width: 0;
@@ -268,7 +268,7 @@
     -o-transition: width 0.2s ease;
     transition: width 0.2s ease;
   }
-  
+
   .nav__item a:hover::after {
     width: 100%;
   }
@@ -287,7 +287,7 @@
     margin-left: 20px;
     text-align: center;
   }
-  
+
   .cart__img-number {
     background-color: #9E9E9E;
     color: #fff;
@@ -325,7 +325,7 @@
 
       .aside__title{
         font-family: Montserrat;
-        font-size: 20px;  
+        font-size: 20px;
         font-weight: bold;
         color: #705658;
         padding-left: 30px;
@@ -340,7 +340,7 @@
       .aside__item {
         padding-left: 30px;
       }
-    
+
         .aside__link {
         text-decoration: none;
         color: #12212D;
@@ -365,12 +365,12 @@
         cursor: pointer;
         margin-right: 10px;
     }
-    
+
       .promo-active {
         opacity: 1;
         background: #ffffff;
     }
-    
+
       .promo-pagination {
         position: absolute;
         transition: .3s opacity;
@@ -406,7 +406,7 @@
   height: 290px;
   background: #fff;
   border-radius: 2px;
-  
+
 
   .product__availability {
     display: inline-block;
@@ -432,7 +432,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
 }
 
 .green {
@@ -451,7 +451,7 @@
     margin-right: 10px;
     font-weight: 700;
   }
-  
+
   .price__sum {
     color: #705658;
     font-weight: 700;
@@ -469,7 +469,7 @@
   margin-right: 20px;
 
   &:hover {
-    color: #fff;  
+    color: #fff;
     background-color: #09579F;
     transition: all 0.4s ease;
   }
@@ -710,7 +710,7 @@
     margin: 18px 0;
   }
   .contacts__email {
-    color: #fff;  
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -725,12 +725,12 @@
       transition: 1s;
       margin-right: 10px;
     }
-    
+
     & a img:hover {
       transform: scale(1.2);
     }
   }
-  
+
 }
 
 .footer__form {
@@ -743,20 +743,20 @@
     display: flex;
     margin-bottom: 12px;
     justify-content: space-between;
-  
+
     .input-text {
       border: 0;
       border-bottom: 1px solid #ffffff33;
       background-color: rgba(0,0,0,0);
-      outline: 0; 
+      outline: 0;
       resize: none;
       color: #fff;
     }
-    
+
     input.input-text::placeholder {
       color: #E8E8E8;
     }
-    
+
     input.btn[type=submit] {
       padding: 9px 19px;
       background: none;
@@ -767,16 +767,16 @@
       font-size: 16px;
     }
   }
-  
+
   .form__politica p {
     white-space: nowrap;
     color: #E3E3E3;
   }
-  
+
     .form__politica__link {
       color: #E3E3E3;
   }
-  
+
   .form__payment {
     margin-top: 10px;
   }
@@ -787,11 +787,11 @@
 /* Стили для подложки */
 
 .overlay {
-   
+
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -806,25 +806,25 @@
 /* Стили для модальных окон */
 
 .modal {
-  
+
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-  
-  
+
+
   /*  Установаем ширину окна  */
   width: 100%;
   max-width: 800px;
-  
+
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
-  
+
   /*  Побочные стили   */
-  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
   text-align: center;
   padding: 30px;
   border-radius: 3px;
@@ -1101,7 +1101,7 @@
     }
 }
 
-.goods__images { 
+.goods__images {
 
   .swiper-container {
     width: 100%;
@@ -1255,7 +1255,7 @@
   line-height: 24px;
 }
 
-.product__art p, 
+.product__art p,
 .product__categories p {
   margin-bottom: 1rem;
   color: #12212D
@@ -1411,4 +1411,21 @@
   cursor: pointer;
 }
 
+
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+}
 // END Карточка товара
+
+.toTop {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 30;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
