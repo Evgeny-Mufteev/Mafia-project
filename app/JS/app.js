@@ -213,7 +213,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
   const toper = function () {
     function scrollTo(element) {
       window.scroll({
@@ -232,4 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   toper();
+
+  window.addEventListener('scroll', function() {
+
+    const topArrow = document.querySelector('.toTop');
+
+    if (window.pageYOffset > 300) {
+      topArrow.classList.add('_show')
+    } else {
+      topArrow.classList.remove('_show')
+    };
+  });
 

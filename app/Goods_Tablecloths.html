@@ -7,7 +7,7 @@
             <!-- Подключаем стили проекта -->
         <link rel="stylesheet" href="css/app.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <title>Номерки</title>
+        <title>Скатерти для игры в Мафию</title>
         <script src="https://kit.fontawesome.com/ce1b480884.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -20,7 +20,7 @@
                             <a href="index.html"><img src="images/src/logo/logo_header.png" alt="logo"></a>
                             <h1 class="logo__title">Реквизиты для игры в Мафию</h1>
                         </div>
-                        <form class="search">
+                        <form class="search" action="url">
                             <input class="search__input" type="text" placeholder="Поиск товаров">
                             <button class="btn__search" type="submit" value="поиск">
                                 <span>
@@ -66,109 +66,228 @@
             <!-- END верхнее меню -->
         </header>
 
+
         <div class="navigation">
             <div class="container">
                 <div class="page__title">
+
                     <div class="block__title">
-                        <h1 class="title">Номерки для игры в Мафию</h1>
+                        <h1 class="title">Скатерть для мафии круглая «Сицилия»</h1>
                     </div>
+
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li><a class="breadcrumbs__links" href="index.html">Главная</a></li>
                             <li><a class="breadcrumbs__links" href="##">></a></li>
                             <li><a class="breadcrumbs__links" href="catalog.html">Каталог</a></li>
                             <li><a class="breadcrumbs__links" href="##">></a></li>
-                            <li><a class="breadcrumbs__links" href="Numbers.html">Номерки</a></li>
+                            <li><a class="breadcrumbs__links" href="Tablecloths.html">Скатерти</a></li>
+                            <li><a class="breadcrumbs__links" href="##">></a></li>
+                            <li><a class="breadcrumbs__links" href="Goods_Tablecloths.html">Скатерть для мафии круглая «Сицилия»</a></li>
                         </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="goods">
+            <div class="container">
+                <div class="goods__row">
+                    <div class="goods__images">
+
+                        <div class="swiper-container goodsSwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/3.jpg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div thumbsSlider="" class="swiper-container goodsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/src/Goods_Tablecloths/3.jpg" />
+                                </div>
+                            </div>
+                            <div class="goods-arrow goods-next"><img src="images/src/prev.svg" alt="prev"></div>
+                            <div class="goods-arrow goods-prev"><img src="images/src/next.svg" alt="next"></div>
+                        </div>
+
+                    </div> <!-- END goods images -->
+
+                    <div class="goods__info">
+                        <div class="card__product-header">
+
+                            <div class="price__box">
+                                <span class="price__descr">Цена:</span>
+                                <span class="price__count">5 290 &#8381</span>
+                            </div>
+
+                            <div class="qib__counter">
+                                <button class="counter__btn" data-direction="minus">-</button>
+                                <input type="text" value="1" class="counter__value">
+                                <span>шт.</span>
+                                <button class="counter__btn" data-direction="plus">+</button>
+                            </div>
+
+                            <a href="##" class="btn">Купить</a>
+                            <span class="text__warning">Заканчивается</span>
+
+                        </div>
+                        <hr>
+                        <div class="card__product-body">
+                            <div class="product__art"><p><strong>Артикул:</strong> 5005</p></div>
+                            <div class="product__categories">
+                                <p>
+                                    <strong>Категория:</strong>
+                                    <a class="categories__links" href="Tablecloths.html">Скатерти</a>
+                                </p>
+                            </div>
+                            <div class="product__description">
+                                <p>Скатерть для мафии круглая «Сицилия» — реквизит, который придаст неповторимый антураж игре в вашем маф-клубе. Состав — ткань. Диаметр — 2,4 м.</p>
+                                <p>Хотите скатерть с логотипом вашего клуба или антикафе? Изготовим под заказ!</p>
+                            </div>
+                        </div>
+
+                    </div> <!-- END goods info -->
+                </div> <!-- END goods row -->
+            </div>
+        </div> <!-- END goods -->
+
+        <div class="tabs">
+            <div class="container">
+                <div class="tabs__row">
+
+                    <div class="tabs__nav">
+                        <button class="tabs__nav-btn  active" type="button" data-tab="#tab_1">Описание</button>
+                        <!-- <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Детали</button> -->
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Отзывы</button>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__item  active" id="tab_1">
+                            <div class="tab__description">
+                                <p>Скатерть для мафии круглая «Сицилия» — реквизит, который придаст неповторимый антураж игре в вашем маф-клубе! Состав — ткань. Диаметр — 2,4 м.</p><br>
+
+                               <p>Хотите скатерть с логотипом вашего клуба или антикафе? Изготовим под заказ!</p>
+
+                                <br><p>Golden Mafia – качественный реквизит для игры в мафию. Сделано в России!</p>
+
+                                <br><p>Мафия — популярнейшая интеллектуальная психологическая игра, которая зародилась в России в 70-80-х годах XX века. В спортивной (классической) мафии участвуют 10 человек. Они делятся на две команды: Мафия и Мирные жители. Игра состоит из чередующихся фаз «День» и «Ночь». «Днем» Мирные жители ищут и выгоняют Мафию, а «Ночью» Мафия убивает Мирных жителей.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="tabs__item" id="tab_2">
+                            <div class="tab__details">
+                                <h2>Детали</h2>
+                                <p><strong>Вес: </strong>700 грамм</p>
+                                <p><strong>Габариты: </strong>28 × 25 × 11 см</p>
+                            </div>
+                        </div> -->
+
+                        <div class="tabs__item" id="tab_3">
+                            <div class="tab__reviews">
+                                <div class="reviews__feedback">
+
+                                    <div class="reviews__content">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Гость</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <div class="reviews__content">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Вадим</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <div class="collapse reviews__content ">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Вадим</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <div class="collapse reviews__content ">
+                                        <div class="reviews__title">
+                                                <div class="reviews__client">Вадим</div>
+                                                <div class="reviews__rating">
+                                                    <img src="images/src/rating.svg" alt="рейтинг">
+                                                </div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            <p>Отличный подарок! Меломанам и не очень посвящается) А так же любителям звука, гаджетов и
+                                            просто почитать аудиокниги в полной изоляции от внешнего мира! </p>
+                                        </div>
+                                        <hr>
+                                    </div>
+
+                                    <button type="submit" class="btn__reviews collapsible">Показать еще Отзывы</button>
+
+                                </div> <!-- END reviews feedback -->
+
+
+                                <div class="reviews__form" action="url">
+                                    <div class="trulala">
+                                        <form class="reviews__wrap">
+                                            <p>ФИО</p>
+                                            <input type="text" class="input__reviews" required>
+                                            <p>E-mail</p>
+                                            <input type="email" class="input__reviews" required>
+                                            <p>Ваш комментарий</p>
+                                            <input type="text" class="input__reviews">
+                                            <button type="submit" class="btn btn__form">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="promo">
-            <div class="container">
-                <div class="flex">
-                    <!-- Каталог -->
-                    <aside class="aside">
-                        <h2 class="aside__title">Каталог товаров</h2>
-                        <ul class="aside__list">
-                            <a class="aside__link" href="Mafia_kits.html"><li class="aside__item">Наборы для мафии</li></a>
-                            <a class="aside__link" href="Masks.html"><li class="aside__item">Маски</li></a>
-                            <a class="aside__link" href="Numbers.html"><li class="aside__item">Номерки</li></a>
-                            <a class="aside__link" href="Cards.html"><li class="aside__item">Карты</li></a>
-                            <a class="aside__link" href="Tablecloths.html"><li class="aside__item">Скатерти</li></a>
-                            <a class="aside__link" href="Nameplates.html"><li class="aside__item">Таблички</li></a>
-                            <a class="aside__link" href="Souvenirs.html"><li class="aside__item">Сувениры</li></a>
-                        </ul>
-                    </aside>
-                    <!-- END Каталог -->
-
-                    <!-- Галерея товаров -->
-                    <div class="products">
-                        <div class="products__title">Найдено <strong>2 товара</strong></div>
-
-                        <div class="products__text">Номерки используются в классической версии игры мафия.
-                        В наборах – 10 номерков из акрила толщиной 1,5 или 3 мм.
-                        </div>
-
-                        <div class="products__greed">
-
-                            <div class="product product__item">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Numbers.html" class="product__image">
-                                    <img src="images/src/goods/numbers1.jpg" alt="Номерки для мафии «Сицилия»">
-                                </a>
-                                <div class="product__name">Номерки для мафии «Сицилия»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum"> 690  &#8381</span>
-                                    </div>
-                                    <a class="product__add-cart" href="Goods_Numbers.html" title="Купить">Купить</a>
-                                </div>
-                            </div>
-
-                            <div class="product product__item">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Numbers.html" class="product__image">
-                                    <img src="images/src/goods/numbers2.jpg" alt="Номерки для игры мафия «Чикаго»">
-                                </a>
-                                <div class="product__name">Номерки для игры мафия «Чикаго»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum"> 1 190 &#8381</span>
-                                    </div>
-                                    <a class="product__add-cart" href="Goods_Numbers.html" title="Купить">Купить</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- END Галерея товаров -->
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <div class="about__text">
-                    <p>Рады приветствовать вас в интернет-магазине Mafia-Rekvizit.Ru! У нас вы можете купить разнообразный реквизит для игры в мафию:
-                    маски, карты, номерки, скатерти и многое другое. Товары в магазине представлены как в виде отдельных позиций,
-                    так и в виде готовых наборов. Необходимый реквизит в нашем каталоге найдут любители классической, спортивной и городской мафии.</p>
-
-                    <p>Недорогие наборы для игры в мафию, состоящие из карт и пластиковых масок, отлично подойдут для дружеской вечеринки в домашней
-                    обстановке или тайм-баре. Если вы открываете маф-клуб или просто планируете игать в мафию по классическим правилам, выбирайте
-                    профессиональные наборы. Реквизит в таких наборах рассчитан на более интенсивный режим эксплуатации, а маски на резинках обеспечивают
-                    соблюдение правильной «ночной» посадки игроков за столом.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Слайдер Товары со сидками -->
-        <section class="bestsellers viewed">
+        <section class="bestsellers goods__kit">
             <div class="container">
-                <h2 class="vieu__title">Посетители недавно смотрели</h2>
+                <h2 class="section__title">Похожие товары</h2>
                 <div class="swiper-container swiper-container-bestsellers">
                     <div class="swiper-wrapper">
                         <!-- Слайдth товаров -->
@@ -178,56 +297,8 @@
                                 <!-- товар 1 -->
                                 <div class="product">
                                     <span class="product__availability green">В наличии</span>
-                                    <a href="Goods_Numbers.html" class="product__image">
-                                        <img src="images/src/goods/goods1.jpg" alt="goods1">
-                                    </a>
-                                    <div class="product__name">Номерки для игры мафия «Сицилия»</div>
-                                    <div class="product__shop">
-                                        <div class="product__price">
-                                            <span class="price__name">Цена</span>
-                                            <span class="price__sum">590 &#8381</span>
-                                        </div>
-                                        <a href="Goods_Numbers.html" class="product__add-cart" title="Купить">Купить</a>
-                                    </div>
-                                </div>
-
-                                <!-- товар 2 -->
-                                <div class="product">
-                                    <span class="product__availability green">В наличии</span>
-                                    <a href="Goods_Mafia_kits.html" class="product__image">
-                                        <img src="images/src/Goods_mafia_kits/1.jpg" alt="goods2">
-                                    </a>
-                                    <div class="product__name">Набор для игры в мафию «Сицилия»</div>
-                                    <div class="product__shop">
-                                        <div class="product__price">
-                                            <span class="price__name">Цена</span>
-                                            <span class="price__sum">4 790 &#8381</span>
-                                        </div>
-                                        <a href="Goods_Mafia_kits.html" class="product__add-cart" title="Купить">Купить</a>
-                                    </div>
-                                </div>
-
-                                <!-- товар 3 -->
-                                <div class="product">
-                                    <span class="product__availability green">В наличии</span>
-                                    <a href="Goods_Cards.html" class="product__image">
-                                        <img src="images/src/goods/carts2.jpg" alt="goods1">
-                                    </a>
-                                    <div class="product__name">Карты для мафии пластиковые «Чикаго»</div>
-                                    <div class="product__shop">
-                                        <div class="product__price">
-                                            <span class="price__name">Цена</span>
-                                            <span class="price__sum">490 &#8381</span>
-                                        </div>
-                                        <a href="Goods_Cards.html" class="product__add-cart" title="Купить">Купить</a>
-                                    </div>
-                                </div>
-
-                                <!-- Товар 4 -->
-                                <div class="product">
-                                    <span class="product__availability red">Скоро поступит</span>
                                     <a href="Goods_Tablecloths.html" class="product__image">
-                                        <img src="images/src/goods/Tablecloths1.jpg" alt="goods2">
+                                        <img src="images/src/goods/Tablecloths1.jpg" alt="Скатерть для мафии круглая «Сицилия»">
                                     </a>
                                     <div class="product__name">Скатерть для мафии круглая «Сицилия»</div>
                                     <div class="product__shop">
@@ -235,18 +306,72 @@
                                             <span class="price__name">Цена</span>
                                             <span class="price__sum">5 290 &#8381</span>
                                         </div>
-                                        <a class="product__add-cart" href="Goods_Tablecloths.html" title="Купить">Купить</a>
+                                        <a href="Goods_Tablecloths.html" class="product__add-cart" title="Купить">Купить</a>
+                                    </div>
+                                </div>
+
+                                <!-- товар 2 -->
+                                <div class="product">
+                                    <span class="product__availability green">В наличии</span>
+                                    <a href="Goods_Tablecloths.html" class="product__image">
+                                        <img src="images/src/goods/Tablecloths2.jpg" alt="Скатерть для мафии прямоугольная «Сицилия»">
+                                    </a>
+                                    <div class="product__name">Скатерть для мафии прямоугольная «Сицилия»</div>
+                                    <div class="product__shop">
+                                        <div class="product__price">
+                                            <span class="price__name">Цена</span>
+                                            <span class="price__sum">4 490 &#8381</span>
+                                        </div>
+                                        <a href="Goods_Tablecloths.html" class="product__add-cart" title="Купить">Купить</a>
+                                    </div>
+                                </div>
+
+                                <!-- товар 3 -->
+                                <div class="product">
+                                    <span class="product__availability green">В наличии</span>
+                                    <a href="Goods_Tablecloths.html" class="product__image">
+                                        <img src="images/src/goods/Tablecloths1.jpg" alt="Скатерть для мафии круглая «Сицилия»">
+                                    </a>
+                                    <div class="product__name">Скатерть для мафии круглая «Сицилия»</div>
+                                    <div class="product__shop">
+                                        <div class="product__price">
+                                            <span class="price__name">Цена</span>
+                                            <span class="price__sum">5 290 &#8381</span>
+                                        </div>
+                                        <a href="Goods_Tablecloths.html" class="product__add-cart" title="Купить">Купить</a>
+                                    </div>
+                                </div>
+
+                                <!-- Товар 4 -->
+                                <div class="product">
+                                    <span class="product__availability green">В наличии</span>
+                                    <a href="Tablecloths.html" class="product__image">
+                                        <img src="images/src/goods/Tablecloths2.jpg" alt="Скатерть для мафии прямоугольная «Сицилия»">
+                                    </a>
+                                    <div class="product__name">Скатерть для мафии прямоугольная «Сицилия»</div>
+                                    <div class="product__shop">
+                                        <div class="product__price">
+                                            <span class="price__name">Цена</span>
+                                            <span class="price__sum">4 490 &#8381</span>
+                                        </div>
+                                        <a href="Goods_Cards.html" class="product__add-cart" title="Купить">Купить</a>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                    <!-- Навигация слайдера -->
+                    <div class="product__navigation-arrows">
+                        <div class="prev"><img src="images/src/prev.svg" alt="prev"></div>
+                        <div class="next"><img src="images/src/next.svg" alt="next"></div>
+                    </div>
 
                 </div>
             </div>
         </section>
-        <!--END Слайдер недавно смотрели -->
+        <!--END Слайдер товары со скидками -->
+
 
         <footer class="footer">
             <div class="container">
@@ -305,7 +430,7 @@
 
                     <div class="footer__form">
                         <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="" method="post" name="form" >
+                        <form class="form" action="url" method="post" name="form" >
                             <input class="input-text" placeholder="Email"></input>
                             <input class="btn" id="submit" value="Подписаться" type="submit" />
                         </form>
@@ -334,7 +459,7 @@
                     <h4>Общие положения</h4><br>
                     <p>Некоторые объекты, размещенные на сайте, являются интеллектуальной собственностью компании "Mafia-Rekvizit". Использование таких объектов установлено действующим законодательством РФ.</p>
                     <p>На сайте "Mafia-Rekvizit" имеются ссылки, позволяющие перейти на другие сайты. Компания "Mafia-Rekvizit" не несет ответственности за сведения, публикуемые на этих сайтах и предоставляет ссылки на них только в целях обеспечения удобства для посетителей своего сайта.</p>
-                </div><br />
+                </div><br/>
                 <div>
                     <h4>Личные сведения и безопасность</h4>
                     <br>
@@ -350,8 +475,9 @@
         <!-- Подложка под модальным окном -->
         <div class="overlay js-overlay-modal"></div>
 
-        <!-- Подключаем скрипты проекта -->
+        <!-- Подключаю скрипты проекта -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="js/app.min.js"></script>
+
     </body>
 </html>

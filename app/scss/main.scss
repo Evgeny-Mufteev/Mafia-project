@@ -1057,16 +1057,17 @@
 .products__greed {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
 .product__item {
-  margin-bottom: 30px;
+  margin: 0 15px 15px 0;
 }
 
 .product__image img {
   max-width: 240px;
+  max-height: 160px;
 }
 
 .viewed {
@@ -1419,6 +1420,8 @@
 // END Карточка товара
 
 .toTop {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   bottom: 5rem;
   right: 1rem;
@@ -1428,4 +1431,9 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  &._show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
+
