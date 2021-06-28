@@ -7,6 +7,7 @@
             <!-- Подключаем стили проекта -->
         <link rel="stylesheet" href="css/app.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="shortcut icon" href="images/src/111.ico" type="image/x-icon">
         <title>Карты для мафии пластиковые «Чикаго»</title>
         <script src="https://kit.fontawesome.com/ce1b480884.js" crossorigin="anonymous"></script>
     </head>
@@ -66,8 +67,8 @@
             <!-- END верхнее меню -->
         </header>
 
-
-        <div class="navigation">
+        <!-- Заголовок и хлебные крошки -->
+        <section class="navigation">
             <div class="container">
                 <div class="page__title">
 
@@ -89,13 +90,16 @@
 
                 </div>
             </div>
-        </div>
+        </section>
+        <!--END Заголовок и хлебные крошки -->
 
-        <div class="goods">
+        <!-- Описание и фото товара -->
+        <section class="goods">
             <div class="container">
                 <div class="goods__row">
                     <div class="goods__images">
 
+                        <!-- Большое фото товара -->
                         <div class="swiper-container goodsSwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -118,7 +122,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!--END Большое фото товара -->
 
+                        <!-- Маленькое фото товара -->
                         <div thumbsSlider="" class="swiper-container goodsSwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -143,29 +149,30 @@
                             <div class="goods-arrow goods-next"><img src="images/src/prev.svg" alt="prev"></div>
                             <div class="goods-arrow goods-prev"><img src="images/src/next.svg" alt="next"></div>
                         </div>
+                        <!--END Маленькое фото товара -->
 
                     </div> <!-- END goods images -->
 
+                    <!-- Описание товара -->
                     <div class="goods__info">
-                        <div class="card__product-header">
 
+                        <div class="card__product-header">
                             <div class="price__box">
                                 <span class="price__descr">Цена:</span>
                                 <span class="price__count">490 &#8381</span>
                             </div>
-
                             <div class="qib__counter">
                                 <button class="counter__btn" data-direction="minus">-</button>
                                 <input type="text" value="1" class="counter__value">
                                 <span>шт.</span>
                                 <button class="counter__btn" data-direction="plus">+</button>
                             </div>
-
                             <a href="##" class="btn">Купить</a>
                             <span class="text__warning">Заканчивается</span>
-
                         </div>
+
                         <hr>
+
                         <div class="card__product-body">
                             <div class="product__art"><p><strong>Артикул:</strong> 4004</p></div>
                             <div class="product__categories">
@@ -185,12 +192,15 @@
                             </div>
                         </div>
 
-                    </div> <!-- END goods info -->
+                    </div>
+                    <!--END Описание товара -->
                 </div> <!-- END goods row -->
             </div>
-        </div> <!-- END goods -->
+        </section>
+        <!--END Описание и фото товара -->
 
-        <div class="tabs">
+        <!-- Секция с табами -->
+        <section class="tabs">
             <div class="container">
                 <div class="tabs__row">
 
@@ -201,18 +211,21 @@
                     </div>
 
                     <div class="tabs__content">
+                        <!-- Таб описание -->
                         <div class="tabs__item  active" id="tab_1">
                             <div class="tab__description">
                                 <p>Карты для игры мафия «Чикаго». Для игры в спортивную (классическую) мафию. В наборе 10 карт: Дон, Шериф, Мафия (2 шт), Мирный житель (6 шт). Размер — 10*7 см.</p><br>
 
-                               <p>Приобретаете реквизит для маф-клуба и хотите карты с вашим логотипом? Нужен другой размер или форма? Изготовим под заказ!</p>
+                            <p>Приобретаете реквизит для маф-клуба и хотите карты с вашим логотипом? Нужен другой размер или форма? Изготовим под заказ!</p>
 
                                 <br><p>Golden Mafia – качественный реквизит для игры в мафию. Сделано в России!</p>
 
                                 <br><p>Мафия — популярнейшая интеллектуальная психологическая игра, которая зародилась в России в 70-80-х годах XX века. В спортивной (классической) мафии участвуют 10 человек. Они делятся на две команды: Мафия и Мирные жители. Игра состоит из чередующихся фаз «День» и «Ночь». «Днем» Мирные жители ищут и выгоняют Мафию, а «Ночью» Мафия убивает Мирных жителей.</p>
                             </div>
                         </div>
+                        <!--END Таб описание -->
 
+                        <!-- Таб детали -->
                         <!-- <div class="tabs__item" id="tab_2">
                             <div class="tab__details">
                                 <h2>Детали</h2>
@@ -220,7 +233,9 @@
                                 <p><strong>Габариты: </strong>28 × 25 × 11 см</p>
                             </div>
                         </div> -->
+                        <!--END Таб детали -->
 
+                        <!-- Таб Отзывы -->
                         <div class="tabs__item" id="tab_3">
                             <div class="tab__reviews">
                                 <div class="reviews__feedback">
@@ -302,10 +317,12 @@
 
                             </div>
                         </div>
+                        <!--END Таб Отзывы -->
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--END Секция с табами -->
 
         <!-- Слайдер Товары со сидками -->
         <section class="bestsellers goods__kit">
@@ -395,11 +412,13 @@
         </section>
         <!--END Слайдер товары со скидками -->
 
-
+        <!-- Футер -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__wrapper">
 
+
+                    <!-- Футер лого и текст -->
                     <div class="footer__copyright">
                         <a href="index.html" class="copyright__logo">
                             <img src="images/src/logo/Logo_footer.png" alt="">
@@ -409,9 +428,13 @@
                             <p>магазин реквизита для игры в мафию</p>
                             <p>Mafia Rekvizit!</p>
                         </div>
-                        <div class="copyright__text">© Все права защищены 2021</div>
+                        <div class="copyright__text">
+                            © Все права защищены 2021
+                        </div>
                     </div>
+                    <!--END Футер лого и текст -->
 
+                    <!-- Футер каталог -->
                     <div class="footer__catalog">
                         <h3 class="catalog__title">Каталог</h3>
                         <div class="catalog__menu">
@@ -426,7 +449,9 @@
                             </ul>
                         </div>
                     </div>
+                    <!--END Футер каталог -->
 
+                    <!-- Футер меню -->
                     <div class="footer__menu">
                         <h3 class="service__title">Сервис и поддержка</h3>
                         <div class="service__menu">
@@ -439,7 +464,9 @@
                             </ul>
                         </div>
                     </div>
+                    <!--END Футер меню -->
 
+                    <!-- Футер контакты -->
                     <div class="footer__contacts">
                         <a href="tel:+80647652334" class="contacts__number">8 (064) 765-23-34</a>
                         <div class="contacts__works-time">ежедневно, 10:00-22:00</div>
@@ -450,10 +477,12 @@
                             <a href="https://www.youtube.com/" target="_blank"><img src="images/src/youtube.svg" alt="youtube" title="youtube"></a>
                         </div>
                     </div>
+                    <!--END Футер контакты -->
 
+                    <!-- Футер форма ос -->
                     <div class="footer__form">
                         <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="url" method="post" name="form" >
+                        <form class="form" action="" method="post" name="form" >
                             <input class="input-text" placeholder="Email"></input>
                             <input class="btn" id="submit" value="Подписаться" type="submit" />
                         </form>
@@ -465,24 +494,31 @@
                             <img src="images/src/payment.svg" alt="payment" title="payment">
                         </div>
                     </div>
+                    <!--END Футер форма ос -->
 
                 </div>
             </div>
         </footer>
+        <!-- END Футер -->
+
+        <!-- Якрорь -->
         <div class="toTop"><img src="images/src/up.png" alt=""></div>
+        <!--END Якрорь -->
+
         <!-- Модальное оконо -->
         <div class="modal" data-modal="1">
             <!--   Svg иконка для закрытия окна  -->
             <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-            <h3 class="modal__title">Политика конфиденциальности</h3>
-            <br>
+            <h3 class="modal__title">Политика конфиденциальности</h3><br>
             <div class="modal__text">
                 <div>
-                    <h4>Общие положения</h4><br>
+                    <h4>Общие положения</h4>
+                    <br>
                     <p>Некоторые объекты, размещенные на сайте, являются интеллектуальной собственностью компании "Mafia-Rekvizit". Использование таких объектов установлено действующим законодательством РФ.</p>
                     <p>На сайте "Mafia-Rekvizit" имеются ссылки, позволяющие перейти на другие сайты. Компания "Mafia-Rekvizit" не несет ответственности за сведения, публикуемые на этих сайтах и предоставляет ссылки на них только в целях обеспечения удобства для посетителей своего сайта.</p>
                 </div><br/>
+
                 <div>
                     <h4>Личные сведения и безопасность</h4>
                     <br>
@@ -497,6 +533,7 @@
         </div>
         <!-- Подложка под модальным окном -->
         <div class="overlay js-overlay-modal"></div>
+        <!--END Модальное оконо -->
 
         <!-- Подключаю скрипты проекта -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
