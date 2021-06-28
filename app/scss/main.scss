@@ -314,6 +314,7 @@
   display: flex;
   justify-content: space-between;
   min-width: 0;
+  flex-wrap: wrap;
 
     .aside {
       width: 23%;
@@ -394,12 +395,6 @@
 }
 
 // =====================================================================Хиты продаж==========================================
-
-.bestsellers__wpapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .product {
   width: 303px;
@@ -502,11 +497,12 @@
   .banners__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .banners1 {
-  width: 636px;
+  width: 48%;
   height: 272px;
   background-color: #E8E8E8;
 
@@ -515,7 +511,7 @@
     font-weight: 700;
     font-size: 30px;
     color: #705658;
-    padding-right: 222px;
+    // padding-right: 222px;
     padding-top: 30px;
     margin-left: 30px;
   }
@@ -1102,6 +1098,7 @@
     }
 }
 
+// слайдер карточки товаров
 .goods__images {
 
   .swiper-container {
@@ -1169,7 +1166,9 @@
   }
 
 }
+// END слайдер карточки товаров
 
+// Навигация слайдера карточки товаров prev next
 .goods-arrow {
   position: absolute;
   top: 9px;
@@ -1195,8 +1194,7 @@
     margin: 30px 0;
   }
 }
-
-
+// END Навигация слайдера карточки товаров prev next
 
 
 .price__box {
@@ -1505,10 +1503,50 @@
 // Адаптив
 @media only screen and (max-width: 1279px) {
 
+  .header__top-wrapper .search__input {
+    width: 400px;
+  }
+
+
 }
 
 @media only screen and (max-width: 1023px) {
 
+  .header__top-wrapper .logo__title {
+    font-size: 10px;
+  }
+
+  .header__top-wrapper .nubmerandlk__phone {
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .header__top-wrapper .nubmerandlk__lk {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+
+  .header__top-wrapper .search__input {
+    width: 290px;
+  }
+
+  .nav .nav__item {
+    margin-left: 25px;
+  }
+
+  .flex .aside {
+    display: none;
+  }
+
+  .flex .slideshow {
+    width: 100%;
+  }
+
+  .swiper-slide picture {
+    object-fit: cover;
+    width: 320px;
+    height: 180px;
+  }
 }
 
 @media only screen and (max-width: 767px) {

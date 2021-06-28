@@ -7,6 +7,7 @@ const swiper = new Swiper('.swiper-container-promo', {
   autoplay: true,
   smartSpeed: 500,
   autoplayTimeout: 5000,
+  autoHeight: true,
   // If we need pagination
   pagination: {
     bulletActiveClass: 'promo-active',
@@ -21,10 +22,15 @@ const swiper = new Swiper('.swiper-container-promo', {
 const Myswiper = new Swiper('.swiper-container-bestsellers', {
 // Optional parameters
 loop: true,
-responsive: {
-  0:{items:2,margin: 30},
-  768:{items:3,margin: 30},
-  991:{items:4,margin: 30},
+// centerInsufficientSlides: true,
+// centeredSlide: true,
+// centeredSlides: true,
+initialSlide:1,
+breakpoints: {
+  481:{slidesPerView:1, initialSlide:1},
+  767:{slidesPerView:2, initialSlide:1},
+  1023:{slidesPerView:3,initialSlide:1},
+  1279:{slidesPerView:4,spaceBetween: 30},
 },
 lazyLoad: true,
 autoplay: false,
@@ -36,6 +42,8 @@ autoplayTimeout: 3000,
     prevEl: '.prev',
   },
 });
+
+
 
 // popup
 
