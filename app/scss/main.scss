@@ -1421,7 +1421,7 @@
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  bottom: 5rem;
+  bottom: 3rem;
   right: 1rem;
   z-index: 30;
   cursor: pointer;
@@ -1507,10 +1507,108 @@
     width: 400px;
   }
 
+  .inner__img img {
+    margin-right: 12px;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .banners1 .banners1__text {
+    font-size: 24px;
+  }
+
+  .inner__info .info__price {
+    font-size: 24px;
+  }
+
+  .inner__info .btn {
+    font-size: 12px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+  .footer__catalog .catalog__title {
+    font-size: 12px;
+  }
+
+  .catalog__menu {
+    font-size: 12px;
+  }
+
+  .footer__contacts .contacts__number {
+    font-size: 12px;
+  }
+
+  .footer__contacts .contacts__works-time {
+    font-size: 12px;
+  }
+
+  .footer__contacts .contacts__email {
+    font-size: 12px;
+  }
+
+  .footer__form .form__title,
+  .form__politica,
+  .footer__menu .service__title {
+    font-size: 12px;
+  }
+
+  .footer__form .form input.btn[type=submit] {
+    font-size: 13px;
+  }
 
 }
 
+
+
+
 @media only screen and (max-width: 1023px) {
+
+  .footer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  }
+
+  .footer__copyright {
+
+    text-align: center;
+    width: 33%;
+
+  }
+
+
+  .footer__catalog {
+    width: 33%;
+    margin-bottom: 30px;
+  }
+
+  .footer__menu {
+    width: 33%;
+  }
+
+
+  .footer__contacts {
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .footer__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 
   .header__top-wrapper .logo__title {
     font-size: 10px;
@@ -1542,14 +1640,42 @@
     width: 100%;
   }
 
-  .swiper-slide picture {
+    .inner__img img {
+    margin-right: 12px;
+    width: 200px;
+    height: auto;
     object-fit: cover;
-    width: 320px;
-    height: 180px;
   }
+
+  .banners1 .banners1__text {
+    font-size: 19px;
+  }
+
+  .inner__info .info__price {
+    font-size: 19px;
+  }
+
+  .banners1 {
+  width: 44%;
+  height: 241px;
+  }
+
+  .inner__img img {
+  width: 150px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+
+
+
 }
 
+
 @media only screen and (max-width: 767px) {
+
 
 }
 
@@ -1558,6 +1684,26 @@
 }
 
 @media only screen and (max-width: 481px) {
+
+}
+
+@media only screen and (max-width: 875px) {
+
+  .banners .banners__wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .banners1 {
+    width: 70%;
+    height: 241px;
+    margin-bottom: 30px;
+  }
+
+  .inner__img img {
+    width: 200px;
+  }
 
 }
 
