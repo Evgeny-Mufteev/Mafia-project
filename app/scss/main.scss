@@ -1498,7 +1498,9 @@
 .noscript h4, .noscript h5 {
   color: #fff;
 }
-// определить, отключен ли JavaScript
+//END определить, отключен ли JavaScript
+
+
 
 
 // Адаптив
@@ -1559,6 +1561,10 @@
 
   .footer__form .form input.btn[type=submit] {
     font-size: 13px;
+  }
+
+  .slideshow img {
+    max-width: 100%;
   }
 
 }
@@ -1678,7 +1684,36 @@
 }
 
 
+@media only screen and (max-width: 875px) {
+
+  .banners .banners__wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .banners1 {
+    width: 75%;
+    height: 241px;
+    margin-bottom: 70px;
+    border-radius: 2px;
+  }
+
+  .inner__img img {
+    width: 200px;
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
+
+  ul.nav__list {
+    font-size: 11px;
+  }
+
+  .cart {
+    font-size: 11px;
+  }
 
   .nubmerandlk {
   display: flex;
@@ -1695,6 +1730,88 @@
 }
 
 @media only screen and (max-width: 641px) {
+
+  // Бургер меню
+.burger-nav {
+  display: block;
+  height: 0px;
+  width: 100%;
+  background-color: #09459f;
+  background-color: #09459f;
+  padding: 0;
+  margin: 0;
+
+}
+
+#nav {
+  overflow: hidden;
+  background: #09459f;
+  height: 0;
+  max-height: 0px;
+  list-style-type: none;
+  padding-left: 0;
+  transition: linear 1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .nav__item {
+  margin-left: 0px;
+}
+
+#nav.open {
+  height: auto;
+  max-height: 500px;
+  transition: linear 1s;
+
+}
+
+#contain {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 97px;
+}
+
+.nav .nav__item {
+  padding: 5px 0;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #09459f;
+    margin: 6px 0;
+    transition: 0.2s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.nav .nav__item a::after {
+  content: '';
+  width: 0;
+  height: 0px;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+// END Бургер меню
+
 
   .footer .footer__wrapper {
     display: flex;
@@ -1741,34 +1858,215 @@
 
   .header__top-wrapper .search__input {
     width: 170px;
-}
+  }
+
+  .banners1 .banners1__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner__img img {
+    width: 150px;
+  }
+
+  .inner__info .btn {
+    padding: 11px 30px;
+  }
+
+  .header__top-wrapper .nubmerandlk__lk,
+  .header__top-wrapper .nubmerandlk__phone {
+    font-size: 14px;
+  }
+
+  form.search {
+    margin-bottom: 15px;
+  }
+
+  a.nubmerandlk__phone {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  a.nubmerandlk__lk {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .header__top-wrapper .search__input {
+    width: 380px;
+  }
+
+
 
 
 }
 
 @media only screen and (max-width: 481px) {
-
-}
-
-@media only screen and (max-width: 875px) {
-
-  .banners .banners__wrapper {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-
-  .banners1 {
-    width: 75%;
-    height: 241px;
-    margin-bottom: 70px;
-    border-radius: 2px;
+  .banners1 .banners1__text {
+    font-size: 15px;
   }
 
   .inner__img img {
+    width: 97px;
+    margin: 0 auto;
+  }
+
+  .banners1 {
+    height: 210px;
+  }
+
+  .flex .slideshow .promo-pagination {
+    display: none;
+  }
+
+  .header__top-wrapper .nubmerandlk__lk,
+  .header__top-wrapper .nubmerandlk__phone {
+    font-size: 14px;
+  }
+
+  form.search {
+    margin-bottom: 15px;
+  }
+
+  a.nubmerandlk__phone {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  a.nubmerandlk__lk {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .header__top-wrapper .search__input {
+    width: 247px;
+  }
+
+  .product__image img {
+    max-height: 113px;
+  }
+
+  .product {
+    width: 255px;
+    height: 280px;
+}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .header__top-wrapper .search__input {
     width: 200px;
   }
 
+  .inner__img img {
+    display: none;
+  }
+
+  .inner__info {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .inner__info .info__price {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .banners1__text {
+    text-align: center;
+    margin-left: 0px !important;
+  }
+
+  .banners1 {
+    width: 100%;
+  }
+
+  .product {
+    width: 255px;
+    height: 280px;
+  }
+
+  .product__navigation-arrows .next,
+  .product__navigation-arrows .prev {
+    padding: 13px;
+  }
+
+  .footer__copyright {
+    display: contents;
+  }
+
+  .footer__contacts {
+    white-space: nowrap;
+  }
+
+  .footer__form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__form .form .input-text {
+    margin-bottom: 20px;
+  }
+
+  h2.about__title {
+    text-align: center;
+  }
+
+  .about__text {
+    text-align: justify;
+  }
+
+  .flex .slideshow .promo-pagination {
+    display: none;
+  }
+
+  .section__title {
+    margin-top: 40px;
+  }
+
+  .footer__catalog {
+    margin-top: 0px;
+  }
+
+  .product__image img {
+    max-height: 113px;
+  }
+
+  form.search {
+    margin-bottom: 15px;
+  }
+
+  a.nubmerandlk__phone {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  a.nubmerandlk__lk {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .header__top-wrapper .nubmerandlk__lk,
+  .header__top-wrapper .nubmerandlk__phone {
+    font-size: 14px;
+  }
+
+  .form__politica {
+    font-size: 11px;
+  }
+
+  .toTop {
+    bottom: 1rem;
+    right: 0rem;
+  }
+
 }
+
+
+
 
 // END Адаптив
