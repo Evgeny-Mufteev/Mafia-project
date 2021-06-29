@@ -19,27 +19,28 @@ const swiper = new Swiper('.swiper-container-promo', {
 });
 
 
-const Myswiper = new Swiper('.swiper-container-bestsellers', {
-// Optional parameters
-loop: true,
-// centerInsufficientSlides: true,
-// centeredSlide: true,
-// centeredSlides: true,
-initialSlide:1,
-breakpoints: {
-  481:{slidesPerView:1, initialSlide:1},
-  767:{slidesPerView:2, initialSlide:1},
-  1023:{slidesPerView:3,initialSlide:1},
-  1279:{slidesPerView:4,spaceBetween: 30},
-},
-lazyLoad: true,
-autoplay: false,
-smartSpeed: 300,
-autoplayTimeout: 3000,
+const Myswiper = new Swiper(".swiper-container-bestsellers", {
+  // Optional parameters
+  loop: true,
+  // centerInsufficientSlides: true,
+  // centeredSlide: true,
+  // centeredSlides: true,
+  initialSlide: 1,
+  breakpoints: {
+    481: { slidesPerView: 1, initialSlide: 1 },
+    641: { slidesPerView: 2, initialSlide: 1 },
+    767: { slidesPerView: 2, initialSlide: 1 },
+    1023: { slidesPerView: 3, initialSlide: 1 },
+    1279: { slidesPerView: 4, spaceBetween: 30 },
+  },
+  lazyLoad: true,
+  autoplay: false,
+  smartSpeed: 300,
+  autoplayTimeout: 3000,
   // Navigation arrows
   navigation: {
-    nextEl: '.next',
-    prevEl: '.prev',
+    nextEl: ".next",
+    prevEl: ".prev",
   },
 });
 

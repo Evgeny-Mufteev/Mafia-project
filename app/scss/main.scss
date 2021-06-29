@@ -401,6 +401,7 @@
   height: 290px;
   background: #fff;
   border-radius: 2px;
+  margin: 0 auto;
 
 
   .product__availability {
@@ -1668,6 +1669,9 @@
     font-size: 12px;
   }
 
+  .slideshow img {
+    max-width: 100%;
+  }
 
 
 
@@ -1676,10 +1680,69 @@
 
 @media only screen and (max-width: 767px) {
 
+  .nubmerandlk {
+  display: flex;
+  flex-direction: column;
+  }
 
+  .header__top-wrapper .nubmerandlk__phone {
+    border: none;
+  }
+
+  .header__top-wrapper .nubmerandlk__lk {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 641px) {
+
+  .footer .footer__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__catalog {
+    margin-top: 30px;
+  }
+
+  .footer__contacts .contacts__number {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer__form .form__title,
+  .footer__menu .service__title,
+  .form__politica {
+    font-size: 15px;
+  }
+
+  .footer__form .form__title {
+  margin-top: 20px;
+  }
+
+  .footer__catalog .catalog__title {
+    font-size: 15px;
+  }
+
+  .footer__form .form {
+    margin: 20px 0;
+  }
+
+  .footer__copyright .copyright__text {
+    display: none;
+  }
+
+  .footer__copyright .copyright__title {
+    display: none;
+  }
+
+  .header__top-wrapper .search__input {
+    width: 170px;
+}
+
 
 }
 
@@ -1696,9 +1759,10 @@
   }
 
   .banners1 {
-    width: 70%;
+    width: 75%;
     height: 241px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    border-radius: 2px;
   }
 
   .inner__img img {
