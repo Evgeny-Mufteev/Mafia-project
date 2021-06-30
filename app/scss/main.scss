@@ -320,9 +320,8 @@
       width: 23%;
       background: #fff;
       padding-top: 32px;
-      padding-bottom: 130px;
       border-radius: 2px;
-      max-height: 500px;
+      max-height: 100%;
 
       .aside__title{
         font-family: Montserrat;
@@ -1553,6 +1552,10 @@
     font-size: 12px;
   }
 
+  ul.service__nav {
+    font-size: 12px;
+  }
+
   .footer__form .form__title,
   .form__politica,
   .footer__menu .service__title {
@@ -1571,8 +1574,17 @@
 
 
 
-
 @media only screen and (max-width: 1023px) {
+
+  .catogories__list .categories__item .categories__content {
+    white-space: nowrap;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .catogories__list .categories__item {
+  flex-direction: column;
+  }
 
   .footer__wrapper {
   display: flex;
@@ -1706,6 +1718,14 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .catogories__list .categories__item {
+  width: 50%;
+  }
+
+  .catogories__list {
+  justify-content: center;
+}
 
   ul.nav__list {
     font-size: 11px;
