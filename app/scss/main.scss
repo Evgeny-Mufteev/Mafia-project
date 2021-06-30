@@ -1175,12 +1175,16 @@
 // Навигация слайдера карточки товаров prev next
 .goods-arrow {
   position: absolute;
-  top: 9px;
-  z-index: 25;
-  border: 1px solid #B7BCC0;
-  padding: 34px 11px;
-  cursor: pointer;
-  background: #f3f3f3;
+    top: 9px;
+    bottom: 0;
+    z-index: 25;
+    border: 1px solid #b7bcc0;
+    padding: 0 11px;
+    cursor: pointer;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .goods-prev {
@@ -1514,6 +1518,20 @@
 // Адаптив
 @media only screen and (max-width: 1279px) {
 
+  .block__title,
+  .breadcrumbs {
+    margin: 15px 0;
+  }
+
+.page__title .breadcrumbs,
+.page__title .block__title {
+  width: 100%;
+}
+
+.page__title {
+    flex-direction: column;
+  }
+
   .categories__image {
     margin-right: 20px;
 }
@@ -1588,8 +1606,18 @@
 }
 
 
-
 @media only screen and (max-width: 1023px) {
+
+    .goods__row .goods__images {
+    max-width: 100%;
+    margin-right: 30px;
+  }
+
+  .goods__row .goods__info {
+    max-width: 100%;
+    border-radius: 2px;
+    margin-top: 30px;
+}
 
   .goods__row {
     flex-direction: column;
@@ -1752,6 +1780,38 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .block__title,
+  .breadcrumbs {
+    font-size: 10px;
+  }
+
+  .goods__info .card__product-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+}
+
+  .price__box,
+  .qib__counter,
+  .btn,
+  .text__warning {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 42px;
+    background-color: #09459f;
+    border-radius: 3px;
+    border: 0;
+}
 
   .modal {
     max-width: 500px;
@@ -1996,6 +2056,10 @@
 
 @media only screen and (max-width: 481px) {
 
+  .tabs__nav {
+    flex-direction: column;
+  }
+
     .modal {
     max-width: 400px;
   }
@@ -2100,6 +2164,9 @@
 }
 
 @media only screen and (max-width: 320px) {
+  .tabs__nav {
+    flex-direction: column;
+  }
 
     .modal {
     max-width: 280px;
