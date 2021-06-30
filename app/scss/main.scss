@@ -921,6 +921,10 @@
 
 // Категории
 
+.categories__image {
+    margin-right: 20px;
+}
+
 .catogories__list {
   display: flex;
   flex-wrap: wrap;
@@ -1415,6 +1419,11 @@
   max-height: 0;
   overflow: hidden;
 }
+
+.bottom {
+  margin-bottom: 60px;
+}
+
 // END Карточка товара
 
 .toTop {
@@ -1505,6 +1514,12 @@
 // Адаптив
 @media only screen and (max-width: 1279px) {
 
+  .categories__image {
+    margin-right: 20px;
+}
+
+
+
   .header__top-wrapper .search__input {
     width: 400px;
   }
@@ -1575,6 +1590,25 @@
 
 
 @media only screen and (max-width: 1023px) {
+
+  .goods__row {
+    flex-direction: column;
+  }
+
+  .products__greed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .products {
+    width: 100%;
+  }
+
+  .categories__link {
+    margin-top: 20px;
+  }
 
   .catogories__list .categories__item .categories__content {
     white-space: nowrap;
@@ -1719,6 +1753,29 @@
 
 @media only screen and (max-width: 767px) {
 
+  .modal {
+    max-width: 500px;
+  }
+
+  .products__greed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+  .service__items {
+    flex-direction: column;
+    align-items: center;
+}
+
+  .service__items .service__item {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
   .catogories__list .categories__item {
   width: 50%;
   }
@@ -1750,6 +1807,21 @@
 }
 
 @media only screen and (max-width: 641px) {
+
+    .modal {
+    max-width: 500px;
+  }
+
+  .catogories__list .categories__item {
+    width: 80%;
+}
+
+  .footer__catalog,
+  .footer__menu,
+  .footer__contacts,
+  .footer__form {
+    width: 100%;
+  }
 
   // Бургер меню
 .burger-nav {
@@ -1923,6 +1995,58 @@
 }
 
 @media only screen and (max-width: 481px) {
+
+    .modal {
+    max-width: 400px;
+  }
+
+  h1.title {
+    font-size: 16px;
+  }
+
+    .page__title .breadcrumbs {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .catogories__list .categories__item {
+  padding: 20px 0;
+  }
+
+  .footer__catalog,
+  .footer__menu,
+  .footer__contacts,
+  .footer__form {
+    width: 100%;
+  }
+
+  .service__items .service__item {
+    width: 100%;
+  }
+
+  .block__title {
+    font-size: 12px;
+  }
+
+  .page__title .breadcrumbs .breadcrumbs__list {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .catogories__list .categories__item {
+    width: 100%;
+    margin: 13px auto;
+  }
+
+  .page__title {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .banners1 .banners1__text {
     font-size: 15px;
   }
@@ -1976,6 +2100,36 @@
 }
 
 @media only screen and (max-width: 320px) {
+
+    .modal {
+    max-width: 280px;
+  }
+
+  .catogories__list .categories__item {
+    padding: 20px 0;
+  }
+
+  .footer__catalog,
+  .footer__menu,
+  .footer__contacts,
+  .footer__form {
+    width: 100%;
+  }
+
+.service__items .service__item {
+    width: 100%;
+  }
+
+  .page__title .breadcrumbs {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  h1.title {
+    font-size: 16px;
+  }
 
   .header__top-wrapper .search__input {
     width: 200px;
