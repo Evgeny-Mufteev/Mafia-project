@@ -1,4 +1,6 @@
 
+// Главный слайдер
+
 const swiper = new Swiper('.swiper-container-promo', {
   // Optional parameters
   loop: true,
@@ -17,14 +19,12 @@ const swiper = new Swiper('.swiper-container-promo', {
   },
 
 });
+// END Главный слайдер
 
-
+// Слайдер с товарами общий
 const Myswiper = new Swiper(".swiper-container-bestsellers", {
   // Optional parameters
   loop: true,
-  // centerInsufficientSlides: true,
-  // centeredSlide: true,
-  // centeredSlides: true,
   initialSlide: 1,
   breakpoints: {
     481: { slidesPerView: 1, initialSlide: 1 },
@@ -43,57 +43,54 @@ const Myswiper = new Swiper(".swiper-container-bestsellers", {
     prevEl: ".prev",
   },
 });
+// Слайдер с товарами общий
 
 
-
-// popup
+// popup взять из интрнета
 
 !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
 
-
 document.addEventListener('DOMContentLoaded', function() {
 
-   /* Записываем в переменные массив элементов-кнопок и подложку.
-      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-   var modalButtons = document.querySelectorAll('.js-open-modal'),
-       overlay      = document.querySelector('.js-overlay-modal'),
-       closeButtons = document.querySelectorAll('.js-modal-close');
+  /* Записываем в переменные массив элементов-кнопок и подложку.
+  Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+  var modalButtons = document.querySelectorAll('.js-open-modal'),
+      overlay      = document.querySelector('.js-overlay-modal'),
+      closeButtons = document.querySelectorAll('.js-modal-close');
 
 
    /* Перебираем массив кнопок */
-   modalButtons.forEach(function(item){
+  modalButtons.forEach(function(item){
 
-      /* Назначаем каждой кнопке обработчик клика */
-      item.addEventListener('click', function(e) {
+    /* Назначаем каждой кнопке обработчик клика */
+    item.addEventListener('click', function(e) {
 
-         /* Предотвращаем стандартное действие элемента. Так как кнопку разные
-            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
-            Нужно подстраховаться. */
-         e.preventDefault();
+  /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+  люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+  Нужно подстраховаться. */
+        e.preventDefault();
 
-         /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+        /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-         var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+        var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
-
-         /* После того как нашли нужное модальное окно, добавим классы
+        /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
-         modalElem.classList.add('active');
-         overlay.classList.add('active');
+        modalElem.classList.add('active');
+        overlay.classList.add('active');
       }); // end click
 
    }); // end foreach
 
+  closeButtons.forEach(function(item){
 
-   closeButtons.forEach(function(item){
+    item.addEventListener('click', function(e) {
+    var parentModal = this.closest('.modal');
 
-      item.addEventListener('click', function(e) {
-         var parentModal = this.closest('.modal');
-
-         parentModal.classList.remove('active');
-         overlay.classList.remove('active');
-      });
+    parentModal.classList.remove('active');
+    overlay.classList.remove('active');
+    });
 
    }); // end foreach
 
@@ -114,12 +111,8 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.remove('active');
     });
 
-
 }); // end ready
 //END popup
-
-
-
 
 // Слайдер в карточке товара
 
@@ -147,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // END Слайдер в карточке товара
 
   // Сетчик товаров
-
   const counter = function () {
     const btns = document.querySelectorAll('.counter__btn');
 
@@ -170,11 +162,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
   counter();
-
-
   // END Сетчик товаров
 
-  // Создание табов
+  // Создание табов сам
   const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
   const tabsItems = document.querySelectorAll(".tabs__item");
 
@@ -198,14 +188,11 @@ document.addEventListener('DOMContentLoaded', function() {
       currentTab.classList.add('active');
       }
 
-
-
     });
   });
     // END Создание табов
 
-
-
+// Кнопка показать еще отзывы
     let coll = document.getElementsByClassName('collapsible');
     for (let i = 0; i < coll.length; i++){
     coll[i].addEventListener('click', function() {
@@ -217,12 +204,10 @@ document.addEventListener('DOMContentLoaded', function() {
       collapse.style.maxHeight = collapse.scrollHeight + 'px'}
     })
     }
+// END Кнопка показать еще отзывы
 
-
-
-
-
-  const toper = function () {
+// Якорь наверх
+    const toper = function () {
     function scrollTo(element) {
       window.scroll({
         left: 0,
@@ -251,6 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
       topArrow.classList.remove('_show')
     };
   });
+// END Якорь наверх
 
   // Кукисы
   function checkCookies() {
@@ -260,8 +246,6 @@ document.addEventListener('DOMContentLoaded', function() {
       return
     }
     let cookieBtn = cookieNotification.querySelector('.cookie_accept');
-
-
 
     // Если записи про кукисы нет или она просрочена на 1 год, то показываем информацию про кукисы
     if (!cookieDate || (+cookieDate + 31536000000) < Date.now()) {
@@ -276,17 +260,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   checkCookies();
 
+   //END Кукисы
 
 
 
-
+// Меню бургер
 let x = document.getElementById("contain");
 
 x.addEventListener("click", myFunction);
 
 function myFunction() {
-  var element = document.getElementById("nav");
+  let element = document.getElementById("nav");
   element.classList.toggle("open");
 
   x.classList.toggle("change");
 }
+
+//END Меню бургер
