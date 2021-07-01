@@ -3,32 +3,32 @@
 
 	// Определяем константы Gulp
     const { src, dest, parallel, series, watch } = require('gulp');
- 
+
     // Подключаем Browsersync
     const browserSync = require('browser-sync').create();
-     
+
     // Подключаем gulp-concat
     const concat = require('gulp-concat');
-     
+
     // Подключаем gulp-uglify-es
     const uglify = require('gulp-uglify-es').default;
-     
+
     // Подключаем модули gulp-sass и gulp-less
     const scss = require('gulp-sass');
     const less = require('gulp-less');
-     
+
     // Подключаем Autoprefixer
     const autoprefixer = require('gulp-autoprefixer');
-     
+
     // Подключаем модуль gulp-clean-css
     const cleancss = require('gulp-clean-css');
-     
+
     // Подключаем gulp-imagemin для работы с изображениями
     const imagemin = require('gulp-imagemin');
-     
+
     // Подключаем модуль gulp-newer
     const newer = require('gulp-newer');
-     
+
     // Подключаем модуль del
     const del = require('del');
 
@@ -43,7 +43,7 @@ function browsersync() {
         online: true // Режим работы: true или false
     })
 }
-        
+
 function scripts() {
 	return src([ // Берём файлы из источников
 		'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
@@ -56,19 +56,19 @@ function scripts() {
 }
 
 function startwatch() {
- 
+
 	// Выбираем все файлы JS в проекте, а затем исключим с суффиксом .min.js
 	watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
-	
+
 	// Мониторим файлы препроцессора на изменения
 	watch('app/**/' + preprocessor + '/**/*', styles);
- 
+
 	// Мониторим файлы HTML на изменения
 	watch('app/**/*.html').on('change', browserSync.reload);
- 
+
 	// Мониторим папку-источник изображений и выполняем images(), если есть изменения
 	watch('app/images/src/**/*', images);
- 
+
 }
 
 
@@ -111,16 +111,16 @@ function cleandist() {
 
 	// Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
     exports.browsersync = browsersync;
- 
+
     // Экспортируем функцию scripts() в таск scripts
     exports.scripts = scripts;
-     
+
     // Экспортируем функцию styles() в таск styles
     exports.styles = styles;
 
 	// Экспорт функции images() в таск images
     exports.images = images;
-     
+
 	// Экспортируем дефолтный таск с нужным набором функций
     exports.default = parallel(styles, scripts, browsersync, startwatch);
 
@@ -129,3 +129,16 @@ function cleandist() {
 
 	// Создаём новый таск "build", который последовательно выполняет нужные операции
     exports.build = series(cleandist, styles, scripts, images, buildcopy);
+
+
+// githab page  с англоязычного сайта
+var gulp = require ('глоток');
+var deploy = require ('gulp-gh-pages');
+
+
+// Отправка сборки на gh-страницы
+
+gulp.task ('deploy', function () {
+  return gulp.src ("./ dist / ** / *")
+    .pipe (deploy ())
+});
