@@ -1524,6 +1524,212 @@
 //END определить, отключен ли JavaScript
 
 
+/*===========================================================Страница Контакты====================================================================*/
+
+.contacts__title {
+  font-family: 'Roboto_Slab';
+  font-size: 38px;
+  font-weight: 400;
+  margin-top: 92px;
+  margin-bottom: 57px;
+}
+
+.form__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__contacts__left {
+  width: 50%;
+}
+
+.contacts__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.contacts__form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 366px;
+}
+
+/* изменение цвета  placeholder-а*/
+.contacts__form ::-webkit-input-placeholder {
+  color: #909090;
+}
+
+.contacts__form ::-moz-placeholder {
+  color: #909090;
+}
+
+.contacts__form :-moz-placeholder {
+  color: #909090;
+}
+
+.contacts__form :-ms-input-placeholder {
+  color: #909090;
+}
+
+/* плавное изменение прозрачности  placeholder-а при фокусе */
+.input-text__clio::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.input-text__clio:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+
+.input-text__clio {
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  margin-bottom: 13px;
+  background-color: #F5F5F5;
+  outline: none;
+  border: none;
+  border: solid 1px #F5F5F5;
+  color: #909090;
+}
+
+.message {
+  height: 120px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  resize: none;
+}
+
+.politics {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.politics a {
+  color: var(--header-footer);
+  text-decoration: underline;
+}
+
+
+
+/* при наведении курсора мышки */
+
+.form__contacts__right {
+  width: 50%;
+}
+
+.btn__contacts {
+    width: 50%;
+    cursor: pointer;
+}
+
+.right {
+  margin-left: 100px;
+}
+
+.contacts__text {
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.contacts__social__link a img {
+  transition: 1s;
+}
+
+.contacts__social__link a img:hover {
+  transform: scale(1.2);
+}
+
+.contacts__text span {
+  font-size: 16px;
+  font-family: 300px;
+
+  margin-left: 6px;
+}
+
+.block__maps {
+  margin: 80px 0;
+}
+
+.clio {
+    color: #04b;
+}
+
+.contacts__social__link a {
+    margin-right: 10px;
+}
+
+p.politics {
+    margin: 15px 0;
+}
+/*===========================================================END Страница Контакты====================================================================*/
+
+
+
 
 
 // Адаптив
@@ -1796,6 +2002,22 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  .btn__contacts {
+    margin: 0 auto !important;
+    margin-bottom: 20px !important;
+  }
+
+  .form__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__contacts__left,
+  .form__contacts__right {
+    max-width: 100%;
+  }
 
   .reviews__form {
     width: 65%;
