@@ -1558,7 +1558,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 366px;
+  max-width: 366px;
 }
 
 /* изменение цвета  placeholder-а*/
@@ -1668,18 +1668,12 @@
 }
 
 .btn__contacts {
-    width: 50%;
-    cursor: pointer;
-}
 
-.right {
-  margin-left: 100px;
+    cursor: pointer;
 }
 
 .contacts__text {
   margin-bottom: 40px;
-  margin-left: 100px;
-  margin-left: 100px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -1693,7 +1687,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 100px;
 }
 
 .contacts__social__link a img {
@@ -1717,6 +1710,7 @@
 
 .clio {
     color: #04b;
+    margin-right: 5px;
 }
 
 .contacts__social__link a {
@@ -2003,6 +1997,30 @@ p.politics {
 
 @media only screen and (max-width: 767px) {
 
+  p.politics {
+    text-align: center;
+  }
+
+  .contacts__form__left {
+    max-width: 100%;
+  }
+
+  .contacts__social__link {
+    justify-content: center;
+  }
+
+  .contacts__subtitle {
+    text-align: center;
+  }
+
+  .contacts__text {
+    justify-content: center;
+  }
+
+  .contacts__info-clio {
+    text-align: center;
+  }
+
   .btn__contacts {
     margin: 0 auto !important;
     margin-bottom: 20px !important;
@@ -2016,7 +2034,7 @@ p.politics {
 
   .form__contacts__left,
   .form__contacts__right {
-    max-width: 100%;
+    width: 100%;
   }
 
   .reviews__form {
