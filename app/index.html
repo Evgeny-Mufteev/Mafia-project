@@ -1,633 +1,926 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="theme-color" content="#09579F">
-        <link rel="apple-touch-icon" href="app/images/dest/apple_touch.png">
-		<title>Mafia</title>
-		<!-- Подключаем стили проекта -->
-		<link rel="preload" href="css/app.min.css" as="style" onload="this.rel='stylesheet'">
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-		<link rel="shortcut icon" href="images/dest/111.ico" type="image/x-icon">
-		<script src="https://kit.fontawesome.com/ce1b480884.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-
-	<!-- Сообщение для инвалидов -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#09579F" />
+    <link rel="apple-touch-icon" href="app/images/dest/apple_touch.png" />
+    <title>Mafia</title>
+    <!-- Подключаем стили проекта -->
+    <link
+      rel="preload"
+      href="css/app.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="images/dest/111.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ce1b480884.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Сообщение для инвалидов -->
     <noscript>
-    <div class="noscript">
+      <div class="noscript">
         <div class="noscript-inner">
-        <h4><strong>Мы заметили, что у Вас выключен JavaScript.</strong></h4>
-        <h5>Необходимо включить его для корректной работы сайта.</h5>
+          <h4><strong>Мы заметили, что у Вас выключен JavaScript.</strong></h4>
+          <h5>Необходимо включить его для корректной работы сайта.</h5>
         </div>
-    </div>
+      </div>
     </noscript>
     <!-- /END Сообщение для инвалидов -->
 
-		<header class="header" id="header">
-			<!-- Шапка -->
-			<div class="header__top">
-				<div class="container">
-					<div class="header__top-wrapper">
-						<div class="logo">
-							<a href="index.html"><img src="images/dest/logo/logo_header.png" alt="logo"></a>
-							<h1 class="logo__title">Реквизиты для игры в Мафию</h1>
-						</div>
-
-						<form class="search">
-							<input class="search__input" type="text" placeholder="Поиск товаров" value="">
-							<button class="btn__search" type="submit" aria-label="search">
-								<i class="fas fa-search"></i>
-							</button>
-						</form>
-
-						<div class="nubmerandlk">
-							<a href="tel:+80647652334" class="nubmerandlk__phone">8(064)765-23-24</a>
-							<a href="#" class="nubmerandlk__lk">Вход / Регистрация</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END шапка -->
-
-			<!-- Верхнее мню -->
-			<div class="header__menu">
-				<div class="container">
-					<div class="header__menu-wrapper">
-
-
-						<nav class="nav">
-							<div class="burger-nav">
-
-							</div>
-
-							<div id="contain">
-								<div class="bar1"></div>
-								<div class="bar2"></div>
-								<div class="bar3"></div>
-							</div>
-
-							<ul class="nav__list" id="nav">
-								<li class="nav__item"><a class="nav__link" href="catalog.html" >Все товары</a></li>
-								<li class="nav__item"><a class="nav__link" href="skidki.html">Скидки и акции</a></li>
-								<li class="nav__item"><a class="nav__link" href="o-mafii.html">О мафии</a></li>
-								<li class="nav__item"><a class="nav__link" href="dostavka-i-oplata.html" >Доставка и оплата</a></li>
-								<li class="nav__item"><a class="nav__link" href="contacts.html" >Контакты</a></li>
-							</ul>
-						</nav>
-
-						<div class="cart" id="nav">
-							<a href="#" class="cart__img">
-								<img src="images/dest/cart.svg" alt="Корзина" title="Корзина">
-								<span class="cart__img-number">21</span>
-							</a>
-							<div class="cart__info">
-								<p>Корзина</p>
-								<p>144 323 руб.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END верхнее меню -->
-		</header>
-
-		<!-- Каталог и главный слайдер -->
-		<section class="promo">
-			<div class="container">
-				<div class="flex">
-					<!-- Каталог -->
-					<aside class="aside">
-						<h2 class="aside__title">Каталог товаров</h2>
-						<ul class="aside__list">
-							<a class="aside__link" href="Mafia_kits.html"><li class="aside__item">Наборы для мафии</li></a>
-							<a class="aside__link" href="Masks.html"><li class="aside__item">Маски</li></a>
-							<a class="aside__link" href="Numbers.html"><li class="aside__item">Номерки</li></a>
-							<a class="aside__link" href="Cards.html"><li class="aside__item">Карты</li></a>
-							<a class="aside__link" href="Tablecloths.html"><li class="aside__item">Скатерти</li></a>
-							<a class="aside__link" href="Nameplates.html"><li class="aside__item">Таблички</li></a>
-							<a class="aside__link" href="Souvenirs.html"><li class="aside__item">Сувениры</li></a>
-						</ul>
-					</aside>
-					<!-- END Каталог -->
-
-					<!-- Главный слайдер -->
-					<div class="slideshow">
-						<div class="swiper-container swiper-container-promo">
-							<div class="swiper-wrapper">
-							<!-- Слайд 1 -->
-							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="images/dest/slider/Slider1.webp">
-									<source type="image/jpeg" srcset="images/dest/slider/Slider1.jpg">
-									<img src="images/dest/slider/Slider1.jpg" alt="slider1">
-								</picture>
-							</div>
-							<!-- Слайд 2 -->
-							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="images/dest/slider/Slider1.webp">
-									<source type="image/jpeg" srcset="images/dest/slider/Slider1.jpg">
-									<img src="images/dest/slider/Slider1.jpg" alt="slider1">
-								</picture>
-							</div>
-							<!-- Слайд 3 -->
-							<div class="swiper-slide">
-								<picture>
-									<source type="image/webp" srcset="images/dest/slider/Slider1.webp">
-									<source type="image/jpeg" srcset="images/dest/slider/Slider1.jpg">
-									<img src="images/dest/slider/Slider1.jpg" alt="slider1">
-								</picture>
-							</div>
-							</div>
-							<!-- Пагинация -->
-							<div class="promo-pagination"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--END Каталог и главный слайдер -->
-
-		<!--Слайдер хиты продаж -->
-		<section class="bestsellers">
-			<div class="container">
-				<h2 class="section__title">Хиты продаж</h2>
-				<div class="swiper-container swiper-container-bestsellers">
-					<div class="swiper-wrapper">
-						<!-- Слайдth товаров -->
-						<div class="swiper-slide">
-                            <!-- товар 1 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Numbers.html" class="product__image">
-                                    <img src="images/dest/goods/numbers1.jpg" alt="Номерки для мафии «Сицилия»">
-                                </a>
-                                <div class="product__name">Номерки для мафии «Сицилия»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">1 190 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Numbers.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 2 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Tablecloths.html" class="product__image">
-                                    <img src="images/dest/goods/Tablecloths1.jpg" alt="Скатерть для мафии круглая «Сицилия»">
-                                </a>
-                                <div class="product__name">Скатерть для мафии круглая «Сицилия»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">5 290 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Tablecloths.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 3 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Mafia_kits.html" class="product__image">
-                                    <img src="images/dest/Goods_mafia_kits/1.jpg" alt="Набор для спортивной мафии «Сицилия Pro I»">
-                                </a>
-                                <div class="product__name">Набор для мафии «Сицилия Pro I»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">9 490 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Mafia_kits.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-							<!-- Товар 4 -->
-							<div class="product">
-								<span class="product__availability red">Скоро поступит</span>
-								<a href="Goods_Mask.html" class="product__image">
-									<img src="images/dest/goods/goods2.jpg" alt="goods2">
-								</a>
-								<div class="product__name">Маска для мафии «Чикаго»</div>
-								<div class="product__shop">
-									<div class="product__price">
-										<span class="price__name">Цена</span>
-										<span class="price__sum">590 &#8381;</span>
-									</div>
-									<a class="product__add-cart" href="Goods_Mask.html" title="Купить">Купить</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<!-- Навигация слайдера -->
-					<div class="product__navigation-arrows">
-						<div class="prev"><img src="images/dest/prev.svg" alt="prev"></div>
-						<div class="next"><img src="images/dest/next.svg" alt="next"></div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- END Слайдер хиты продаж -->
-
-		<!-- Слайдер новинки -->
-		<section class="bestsellers">
-			<div class="container">
-				<h2 class="section__title">Новинки</h2>
-				<div class="swiper-container swiper-container-bestsellers">
-					<div class="swiper-wrapper">
-						<!-- Слайдth товаров -->
-						<div class="swiper-slide">
-                            <!-- товар 1 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Cards.html" class="product__image">
-                                    <img src="images/dest/goods/carts2.jpg" alt="Карты для мафии пластиковые «Чикаго»">
-                                </a>
-                                <div class="product__name">Карты для мафии пластиковые «Чикаго»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">490 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Cards.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 2 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Souvenirs.html" class="product__image">
-                                    <img src="images/dest/goods/Souvenirs2.jpg" alt="Кружка сувенирная «3 в 3»">
-                                </a>
-                                <div class="product__name">Кружка сувенирная «3 в 3»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">449 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Souvenirs.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 3 -->
-                            <div class="product">
-                                <span class="product__availability red">Скоро поступит</span>
-                                <a href="Goods_Mask.html" class="product__image">
-                                    <img src="images/dest/goods/mascs1.jpg" alt="Маска для мафии «Сицилия»">
-                                </a>
-                                <div class="product__name">Маска для мафии «Чикаго»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">349 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Mask.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- Товар 4 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Nameplates.html" class="product__image">
-                                    <img src="images/dest/goods/Nameplates2.jpg" alt="Табличка для фотосессий «Босс Мафии»">
-                                </a>
-                                <div class="product__name">Табличка для фотосессий «Босс Мафии»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">449 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Nameplates.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-					</div>
-					<!-- Навигация слайдера -->
-					<div class="product__navigation-arrows">
-						<div class="prev"><img src="images/dest/prev.svg" alt="prev"></div>
-						<div class="next"><img src="images/dest/next.svg" alt="next"></div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!--END Слайдер новинки -->
-
-		<!-- Баннеры -->
-		<section class="banners">
-			<div class="container">
-				<div class="banners__wrapper">
-
-					<div class="banners1">
-						<div class="banners1__text">
-							<p>Карты для мафии «Чикаго»</p>
-							<p>уже в продаже</p>
-						</div>
-						<div class="banners1__inner">
-							<div class="inner__info">
-								<p class="info__price">490 &#8381;</p>
-								<a href="Goods_Cards.html" class="info__button btn">Подробнее</a>
-							</div>
-							<a href="Goods_Cards.html" class="inner__img">
-								<img src="images/dest/goods/007.png" alt="">
-							</a>
-						</div>
-					</div>
-
-					<div class="banners1">
-						<div class="banners1__text">
-							<p>Маска для мафии “Чикаго”</p>
-							<p>уже в продаже</p>
-						</div>
-						<div class="banners1__inner">
-							<div class="inner__info">
-								<p class="info__price">590 &#8381;</p>
-								<a href="Goods_Mask.html" class="info__button btn">Подробнее</a>
-							</div>
-							<a href="Goods_Mask.html" class="inner__img">
-								<img src="images/dest/banners/banner.png" alt="">
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!--END Баннеры -->
-
-		<!-- Слайдер Товары со сидками -->
-		<section class="bestsellers">
-			<div class="container">
-				<h2 class="section__title">Товары со скидками</h2>
-				<div class="swiper-container swiper-container-bestsellers">
-					<div class="swiper-wrapper">
-						<!-- Слайдth товаров -->
-						<div class="swiper-slide">
-                            <!-- Товар 1 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Nameplates.html" class="product__image">
-                                    <img src="images/dest/goods/Nameplates2.jpg" alt="Табличка для фотосессий «Босс Мафии»">
-                                </a>
-                                <div class="product__name">Табличка для фотосессий «Босс Мафии»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">449 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Nameplates.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 2 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Mafia_kits.html" class="product__image">
-                                    <img src="images/dest/Goods_mafia_kits/1.jpg" alt="Набор для спортивной мафии «Сицилия Pro I»">
-                                </a>
-                                <div class="product__name">Набор для мафии «Сицилия Pro I»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">9 490 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Mafia_kits.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 3 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Numbers.html" class="product__image">
-                                    <img src="images/dest/goods/numbers1.jpg" alt="Номерки для мафии «Сицилия»">
-                                </a>
-                                <div class="product__name">Номерки для мафии «Сицилия»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">1 190 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Numbers.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-						<div class="swiper-slide">
-                            <!-- товар 4 -->
-                            <div class="product">
-                                <span class="product__availability green">В наличии</span>
-                                <a href="Goods_Cards.html" class="product__image">
-                                    <img src="images/dest/goods/carts1.jpg" alt="Карты для игры мафия «Сицилия»">
-                                </a>
-                                <div class="product__name">Карты для игры мафия «Сицилия»</div>
-                                <div class="product__shop">
-                                    <div class="product__price">
-                                        <span class="price__name">Цена</span>
-                                        <span class="price__sum">399 &#8381;</span>
-                                    </div>
-                                    <a href="Goods_Cards.html" class="product__add-cart" title="Купить">Купить</a>
-                                </div>
-                            </div>
-						</div>
-
-					</div>
-					<!-- Навигация слайдера -->
-					<div class="product__navigation-arrows">
-						<div class="prev"><img src="images/dest/prev.svg" alt="prev"></div>
-						<div class="next"><img src="images/dest/next.svg" alt="next"></div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!--END Слайдер товары со скидками -->
-
-		<!-- Секция о нас -->
-		<section class="about">
-			<div class="container">
-				<h2 class="about__title">Все для игры в Мафию!</h2>
-				<div class="about__text">
-					<p>Рады приветствовать вас в интернет-магазине Mafia-Rekvizit.Ru! У нас вы можете купить разнообразный реквизит для игры в мафию:
-					маски, карты, номерки, скатерти и многое другое. Товары в магазине представлены как в виде отдельных позиций,
-					так и в виде готовых наборов. Необходимый реквизит в нашем каталоге найдут любители классической, спортивной и городской мафии.</p>
-
-					<p>Недорогие наборы для игры в мафию, состоящие из карт и пластиковых масок, отлично подойдут для дружеской вечеринки в домашней
-					обстановке или тайм-баре. Если вы открываете маф-клуб или просто планируете игать в мафию по классическим правилам, выбирайте
-					профессиональные наборы. Реквизит в таких наборах рассчитан на более интенсивный режим эксплуатации, а маски на резинках обеспечивают
-					соблюдение правильной «ночной» посадки игроков за столом.</p>
-
-					<p>Реквизит для мафии в интернет-магазине Mafia-Rekvizit.Ru вы можете приобрести в технической упаковке, если хотите сэкономить
-					при покупке. А за небольшую доплату мы отправляем его в красивой подарочной упаковке.</p>
-
-					<p>Большую часть реквизита, представленного в магазине, мы производим самостоятельно. Поэтому наш товар всегда есть в наличии.
-					Любой реквизит или набор для игры в мафию из нашего каталога может быть адаптирован под ваши требования и изготовлен на заказ.
-					Если вам нужен реквизит с вашим логотипом, из определенных материалов или определенного размера, обращайтесь — сделаем!</p>
-
-					<p>Также в нашем магазине представлена различная сувенирная продукция мафиозной тематики: ручки, значки, кружки, майки и т. д.
-					<br>Доставку производим по России и странам СНГ!</p>
-				</div>
-			</div>
-		</section>
-		<!--END Секция о нас -->
-
-        <!-- Футер -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__wrapper">
-
-                    <!-- Футер лого и текст -->
-                    <div class="footer__copyright">
-                        <a href="index.html" class="copyright__logo">
-                            <img src="images/dest/logo/Logo_footer.png" alt="">
-                        </a>
-                        <div class="copyright__title">
-                            <p>Добро пожаловать в интернет – </p>
-                            <p>магазин реквизита для игры в мафию</p>
-                            <p>Mafia Rekvizit!</p>
-                        </div>
-                        <div class="copyright__text">
-                            © Все права защищены 2021
-                        </div>
-                    </div>
-                    <!--END Футер лого и текст -->
-
-                    <!-- Футер каталог -->
-                    <div class="footer__catalog">
-                        <h3 class="catalog__title">Каталог</h3>
-                        <div class="catalog__menu">
-                            <ul class="catalog__nav">
-                                <li class="catalog__item"><a class="catalog__link" href="Mafia_kits.html">Наборы для мафии</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Masks.html">Маски</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Numbers.html">Номерки</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Cards.html">Карты</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Tablecloths.html">Скатерти</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Nameplates.html">Таблички</a></li>
-                                <li class="catalog__item"><a class="catalog__link" href="Souvenirs.html">Сувениры</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END Футер каталог -->
-
-                    <!-- Футер меню -->
-                    <div class="footer__menu">
-                        <h3 class="service__title">Сервис и поддержка</h3>
-                        <div class="service__menu">
-                            <ul class="service__nav">
-                                <li class="service__item"><a class="service__link" href="dostavka-i-oplata.html">Доставка и оплата</a></li>
-                                <li class="service__item"><a class="service__link" href="skidki.html">Скидки и акции</a></li>
-                                <li class="service__item"><a class="service__link" href="#">Личный кабинет</a></li>
-                                <li class="service__item"><a class="service__link" href="o-mafii.html">О мафии</a></li>
-                                <li class="service__item"><a class="service__link" href="contacts.html" >Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--END Футер меню -->
-
-                    <!-- Футер контакты -->
-                    <div class="footer__contacts">
-                        <a href="tel:+80647652334" class="contacts__number">8 (064) 765-23-34</a>
-                        <div class="contacts__works-time">ежедневно, 10:00-22:00</div>
-                        <a href="mailto:vlad@htmlbook.ru" class="contacts__email">shop@mafia-rekvizit.ru</a>
-                        <div class="contacts__social-links">
-                            <a href="https://vk.com/" target="_blank" rel="nofollow"><img src="images/dest/vk.svg" alt="vk" title="vk"></a>
-                            <a href="https://instagram.com/" target="_blank" rel="nofollow"><img src="images/dest/instagram.svg" alt="instagram" title="instagram"></a>
-                            <a href="https://www.youtube.com/" target="_blank" rel="nofollow"><img src="images/dest/youtube.svg" alt="youtube" title="youtube"></a>
-                        </div>
-                    </div>
-                    <!--END Футер контакты -->
-
-                    <!-- Футер форма ос -->
-                    <div class="footer__form">
-                        <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="mail.php" method="post" name="form" >
-                            <input class="input-text" placeholder="Email" name="email" type="email" required>
-                            <input class="btn" id="submit" value="Подписаться" type="submit" />
-                        </form>
-                        <div class="form__politica">
-                            <p>Нажимая кнопку “Подписаться” вы соглашаетесь</p>
-                            <p>с <a href="#" class="js-open-modal" data-modal="1">Политикой конфиденциальности</a> сайта</p>
-                        </div>
-                        <div class="form__payment">
-                            <img src="images/dest/payment.svg" alt="payment" title="payment">
-                        </div>
-                    </div>
-                    <!--END Футер форма ос -->
-
-                </div>
+    <header class="header" id="header">
+      <!-- Шапка -->
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="images/dest/logo/logo_header.png" alt="logo"
+              /></a>
+              <h1 class="logo__title">Реквизиты для игры в Мафию</h1>
             </div>
-        </footer>
-        <!-- END Футер -->
 
-        <!-- Якрорь -->
-        <div class="toTop"><img src="images/dest/up.png" alt=""></div>
-        <!--END Якрорь -->
+            <form class="search">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Поиск товаров"
+                value=""
+              />
+              <button class="btn__search" type="submit" aria-label="search">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
 
-        <!-- Модальное оконо -->
-        <div class="modal" data-modal="1">
-            <!--   Svg иконка для закрытия окна  -->
-            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-            <h3 class="modal__title">Политика конфиденциальности</h3><br>
-            <div class="modal__text">
-                <div>
-                    <h4>Общие положения</h4>
-                    <br>
-                    <p>Некоторые объекты, размещенные на сайте, являются интеллектуальной собственностью компании "Mafia-Rekvizit". Использование таких объектов установлено действующим законодательством РФ.</p>
-                    <p>На сайте "Mafia-Rekvizit" имеются ссылки, позволяющие перейти на другие сайты. Компания "Mafia-Rekvizit" не несет ответственности за сведения, публикуемые на этих сайтах и предоставляет ссылки на них только в целях обеспечения удобства для посетителей своего сайта.</p>
-                </div><br/>
-
-                <div>
-                    <h4>Личные сведения и безопасность</h4>
-                    <br>
-                    <p>Компания "Mafia-Rekvizit" гарантирует, что никакая полученная от Вас информация никогда и ни при каких условиях не будет предоставлена третьим лицам, за исключением случаев, предусмотренных действующим законодательством Российской Федерации.</p>
-                    <p>В определенных обстоятельствах компания "Mafia-Rekvizit" может попросить Вас зарегистрироваться и предоставить личные сведения. Предоставленная информация используется исключительно в служебных целях, а также для предоставления доступа к специальной информации.</p>
-                    <p>Чтобы обеспечить Вас информацией определенного рода, компания "Mafia-Rekvizit" с Вашего явного согласия может присылать на указанный при регистрации адрес электронный почты информационные сообщения. В любой момент Вы можете изменить тематику такой рассылки или отказаться от нее.</p>
-                    <p>Как и многие другие сайты, "Mafia-Rekvizit" использует технологию cookie, которая может быть использована для продвижения нашего продукта и измерения эффективности рекламы. Кроме того, с помощь этой технологии "Mafia-Rekvizit" настраивается на работу лично с Вами. В частности без этой технологии невозможна работа с авторизацией в панели управления.</p>
-                    <p>Сведения на данном сайте имеют чисто информативный характер, в них могут быть внесены любые изменения без какого-либо предварительного уведомления.</p>
-                    <p>Чтобы отказаться от дальнейших коммуникаций с нашей компанией, изменить или удалить свою личную информацию, напишите нам через форму обратной связи.</p>
-                </div>
+            <div class="nubmerandlk">
+              <a href="tel:+80647652334" class="nubmerandlk__phone"
+                >8(064)765-23-24</a
+              >
+              <a href="#" class="nubmerandlk__lk">Вход / Регистрация</a>
             </div>
+          </div>
         </div>
-        <!-- Подложка под модальным окном -->
-        <div class="overlay js-overlay-modal"></div>
-        <!--END Модальное оконо -->
+      </div>
+      <!-- END шапка -->
 
-		<div id="cookie_notification">
-			<p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</p>
-			<button class="button cookie_accept">Принять</button>
-		</div>
+      <!-- Верхнее мню -->
+      <div class="header__menu">
+        <div class="container">
+          <div class="header__menu-wrapper">
+            <nav class="nav">
+              <div class="burger-nav"></div>
 
-		<!-- Подключаю скрипты проекта -->
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="js/app.min.js"></script>
+              <div id="contain">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
 
+              <ul class="nav__list" id="nav">
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Все товары</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="skidki.html">Скидки и акции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="o-mafii.html">О мафии</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="dostavka-i-oplata.html"
+                    >Доставка и оплата</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
 
-	</body>
+            <div class="cart">
+              <a href="#" class="cart__img">
+                <img src="images/dest/cart.svg" alt="Корзина" title="Корзина" />
+                <span class="cart__img-number">21</span>
+              </a>
+              <div class="cart__info">
+                <p>Корзина</p>
+                <p>144 323 руб.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END верхнее меню -->
+    </header>
+
+    <!-- Каталог и главный слайдер -->
+    <section class="promo">
+      <div class="container">
+        <div class="flex">
+          <!-- Каталог -->
+          <aside class="aside">
+            <h2 class="aside__title">Каталог товаров</h2>
+            <ul class="aside__list">
+              <li class="aside__item">
+                <a class="aside__link" href="Mafia_kits.html"
+                  >Наборы для мафии</a
+                >
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Masks.html">Маски</a>
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Numbers.html">Номерки</a>
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Cards.html">Карты</a>
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Tablecloths.html">Скатерти</a>
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Nameplates.html">Таблички</a>
+              </li>
+              <li class="aside__item">
+                <a class="aside__link" href="Souvenirs.html">Сувениры</a>
+              </li>
+            </ul>
+          </aside>
+          <!-- END Каталог -->
+
+          <!-- Главный слайдер -->
+          <div class="slideshow">
+            <div class="swiper-container swiper-container-promo">
+              <div class="swiper-wrapper">
+                <!-- Слайд 1 -->
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="images/dest/slider/Slider1.webp"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="images/dest/slider/Slider1.jpg"
+                    />
+                    <img src="images/dest/slider/Slider1.jpg" alt="slider1" />
+                  </picture>
+                </div>
+                <!-- Слайд 2 -->
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="images/dest/slider/Slider1.webp"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="images/dest/slider/Slider1.jpg"
+                    />
+                    <img src="images/dest/slider/Slider1.jpg" alt="slider1" />
+                  </picture>
+                </div>
+                <!-- Слайд 3 -->
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="images/dest/slider/Slider1.webp"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcset="images/dest/slider/Slider1.jpg"
+                    />
+                    <img src="images/dest/slider/Slider1.jpg" alt="slider1" />
+                  </picture>
+                </div>
+              </div>
+              <!-- Пагинация -->
+              <div class="promo-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Каталог и главный слайдер -->
+
+    <!--Слайдер хиты продаж -->
+    <section class="bestsellers">
+      <div class="container">
+        <h2 class="section__title">Хиты продаж</h2>
+        <div class="swiper-container swiper-container-bestsellers">
+          <div class="swiper-wrapper">
+            <!-- Слайдth товаров -->
+            <div class="swiper-slide">
+              <!-- товар 1 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Numbers.html" class="product__image">
+                  <img
+                    src="images/dest/goods/numbers1.jpg"
+                    alt="Номерки для мафии «Сицилия»"
+                  />
+                </a>
+                <div class="product__name">Номерки для мафии «Сицилия»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">1 190 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Numbers.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 2 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Tablecloths.html" class="product__image">
+                  <img
+                    src="images/dest/goods/Tablecloths1.jpg"
+                    alt="Скатерть для мафии круглая «Сицилия»"
+                  />
+                </a>
+                <div class="product__name">
+                  Скатерть для мафии круглая «Сицилия»
+                </div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">5 290 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Tablecloths.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 3 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Mafia_kits.html" class="product__image">
+                  <img
+                    src="images/dest/Goods_mafia_kits/1.jpg"
+                    alt="Набор для спортивной мафии «Сицилия Pro I»"
+                  />
+                </a>
+                <div class="product__name">Набор для мафии «Сицилия Pro I»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">9 490 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Mafia_kits.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Товар 4 -->
+              <div class="product">
+                <span class="product__availability red">Скоро поступит</span>
+                <a href="Goods_Mask.html" class="product__image">
+                  <img src="images/dest/goods/goods2.jpg" alt="goods2" />
+                </a>
+                <div class="product__name">Маска для мафии «Чикаго»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">590 &#8381;</span>
+                  </div>
+                  <a
+                    class="product__add-cart"
+                    href="Goods_Mask.html"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Навигация слайдера -->
+          <div class="product__navigation-arrows">
+            <div class="prev">
+              <img src="images/dest/prev.svg" alt="prev" />
+            </div>
+            <div class="next">
+              <img src="images/dest/next.svg" alt="next" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Слайдер хиты продаж -->
+
+    <!-- Слайдер новинки -->
+    <section class="bestsellers">
+      <div class="container">
+        <h2 class="section__title">Новинки</h2>
+        <div class="swiper-container swiper-container-bestsellers">
+          <div class="swiper-wrapper">
+            <!-- Слайдth товаров -->
+            <div class="swiper-slide">
+              <!-- товар 1 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Cards.html" class="product__image">
+                  <img
+                    src="images/dest/goods/carts2.jpg"
+                    alt="Карты для мафии пластиковые «Чикаго»"
+                  />
+                </a>
+                <div class="product__name">
+                  Карты для мафии пластиковые «Чикаго»
+                </div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">490 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Cards.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 2 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Souvenirs.html" class="product__image">
+                  <img
+                    src="images/dest/goods/Souvenirs2.jpg"
+                    alt="Кружка сувенирная «3 в 3»"
+                  />
+                </a>
+                <div class="product__name">Кружка сувенирная «3 в 3»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">449 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Souvenirs.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 3 -->
+              <div class="product">
+                <span class="product__availability red">Скоро поступит</span>
+                <a href="Goods_Mask.html" class="product__image">
+                  <img
+                    src="images/dest/goods/mascs1.jpg"
+                    alt="Маска для мафии «Сицилия»"
+                  />
+                </a>
+                <div class="product__name">Маска для мафии «Чикаго»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">349 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Mask.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- Товар 4 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Nameplates.html" class="product__image">
+                  <img
+                    src="images/dest/goods/Nameplates2.jpg"
+                    alt="Табличка для фотосессий «Босс Мафии»"
+                  />
+                </a>
+                <div class="product__name">
+                  Табличка для фотосессий «Босс Мафии»
+                </div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">449 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Nameplates.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Навигация слайдера -->
+          <div class="product__navigation-arrows">
+            <div class="prev">
+              <img src="images/dest/prev.svg" alt="prev" />
+            </div>
+            <div class="next">
+              <img src="images/dest/next.svg" alt="next" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Слайдер новинки -->
+
+    <!-- Баннеры -->
+    <section class="banners">
+      <div class="container">
+        <div class="banners__wrapper">
+          <div class="banners1">
+            <div class="banners1__text">
+              <p>Карты для мафии «Чикаго»</p>
+              <p>уже в продаже</p>
+            </div>
+            <div class="banners1__inner">
+              <div class="inner__info">
+                <p class="info__price">490 &#8381;</p>
+                <a href="Goods_Cards.html" class="info__button btn"
+                  >Подробнее</a
+                >
+              </div>
+              <a href="Goods_Cards.html" class="inner__img">
+                <img src="images/dest/goods/007.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="banners1">
+            <div class="banners1__text">
+              <p>Маска для мафии “Чикаго”</p>
+              <p>уже в продаже</p>
+            </div>
+            <div class="banners1__inner">
+              <div class="inner__info">
+                <p class="info__price">590 &#8381;</p>
+                <a href="Goods_Mask.html" class="info__button btn">Подробнее</a>
+              </div>
+              <a href="Goods_Mask.html" class="inner__img">
+                <img src="images/dest/banners/banner.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Баннеры -->
+
+    <!-- Слайдер Товары со сидками -->
+    <section class="bestsellers">
+      <div class="container">
+        <h2 class="section__title">Товары со скидками</h2>
+        <div class="swiper-container swiper-container-bestsellers">
+          <div class="swiper-wrapper">
+            <!-- Слайдth товаров -->
+            <div class="swiper-slide">
+              <!-- Товар 1 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Nameplates.html" class="product__image">
+                  <img
+                    src="images/dest/goods/Nameplates2.jpg"
+                    alt="Табличка для фотосессий «Босс Мафии»"
+                  />
+                </a>
+                <div class="product__name">
+                  Табличка для фотосессий «Босс Мафии»
+                </div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">449 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Nameplates.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 2 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Mafia_kits.html" class="product__image">
+                  <img
+                    src="images/dest/Goods_mafia_kits/1.jpg"
+                    alt="Набор для спортивной мафии «Сицилия Pro I»"
+                  />
+                </a>
+                <div class="product__name">Набор для мафии «Сицилия Pro I»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">9 490 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Mafia_kits.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 3 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Numbers.html" class="product__image">
+                  <img
+                    src="images/dest/goods/numbers1.jpg"
+                    alt="Номерки для мафии «Сицилия»"
+                  />
+                </a>
+                <div class="product__name">Номерки для мафии «Сицилия»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">1 190 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Numbers.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <!-- товар 4 -->
+              <div class="product">
+                <span class="product__availability green">В наличии</span>
+                <a href="Goods_Cards.html" class="product__image">
+                  <img
+                    src="images/dest/goods/carts1.jpg"
+                    alt="Карты для игры мафия «Сицилия»"
+                  />
+                </a>
+                <div class="product__name">Карты для игры мафия «Сицилия»</div>
+                <div class="product__shop">
+                  <div class="product__price">
+                    <span class="price__name">Цена</span>
+                    <span class="price__sum">399 &#8381;</span>
+                  </div>
+                  <a
+                    href="Goods_Cards.html"
+                    class="product__add-cart"
+                    title="Купить"
+                    >Купить</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Навигация слайдера -->
+          <div class="product__navigation-arrows">
+            <div class="prev">
+              <img src="images/dest/prev.svg" alt="prev" />
+            </div>
+            <div class="next">
+              <img src="images/dest/next.svg" alt="next" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Слайдер товары со скидками -->
+
+    <!-- Секция о нас -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Все для игры в Мафию!</h2>
+        <div class="about__text">
+          <p>
+            Рады приветствовать вас в интернет-магазине Mafia-Rekvizit.Ru! У нас
+            вы можете купить разнообразный реквизит для игры в мафию: маски,
+            карты, номерки, скатерти и многое другое. Товары в магазине
+            представлены как в виде отдельных позиций, так и в виде готовых
+            наборов. Необходимый реквизит в нашем каталоге найдут любители
+            классической, спортивной и городской мафии.
+          </p>
+
+          <p>
+            Недорогие наборы для игры в мафию, состоящие из карт и пластиковых
+            масок, отлично подойдут для дружеской вечеринки в домашней
+            обстановке или тайм-баре. Если вы открываете маф-клуб или просто
+            планируете игать в мафию по классическим правилам, выбирайте
+            профессиональные наборы. Реквизит в таких наборах рассчитан на более
+            интенсивный режим эксплуатации, а маски на резинках обеспечивают
+            соблюдение правильной «ночной» посадки игроков за столом.
+          </p>
+
+          <p>
+            Реквизит для мафии в интернет-магазине Mafia-Rekvizit.Ru вы можете
+            приобрести в технической упаковке, если хотите сэкономить при
+            покупке. А за небольшую доплату мы отправляем его в красивой
+            подарочной упаковке.
+          </p>
+
+          <p>
+            Большую часть реквизита, представленного в магазине, мы производим
+            самостоятельно. Поэтому наш товар всегда есть в наличии. Любой
+            реквизит или набор для игры в мафию из нашего каталога может быть
+            адаптирован под ваши требования и изготовлен на заказ. Если вам
+            нужен реквизит с вашим логотипом, из определенных материалов или
+            определенного размера, обращайтесь — сделаем!
+          </p>
+
+          <p>
+            Также в нашем магазине представлена различная сувенирная продукция
+            мафиозной тематики: ручки, значки, кружки, майки и т. д.
+            <br />Доставку производим по России и странам СНГ!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--END Секция о нас -->
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <!-- Футер лого и текст -->
+          <div class="footer__copyright">
+            <a href="index.html" class="copyright__logo">
+              <img src="images/dest/logo/Logo_footer.png" alt="" />
+            </a>
+            <div class="copyright__title">
+              <p>Добро пожаловать в интернет –</p>
+              <p>магазин реквизита для игры в мафию</p>
+              <p>Mafia Rekvizit!</p>
+            </div>
+            <div class="copyright__text">© Все права защищены 2021</div>
+          </div>
+          <!--END Футер лого и текст -->
+
+          <!-- Футер каталог -->
+          <div class="footer__catalog">
+            <h3 class="catalog__title">Каталог</h3>
+            <div class="catalog__menu">
+              <ul class="catalog__nav">
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Mafia_kits.html"
+                    >Наборы для мафии</a
+                  >
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Masks.html">Маски</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Numbers.html">Номерки</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Cards.html">Карты</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Tablecloths.html">Скатерти</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Nameplates.html">Таблички</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="Souvenirs.html">Сувениры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--END Футер каталог -->
+
+          <!-- Футер меню -->
+          <div class="footer__menu">
+            <h3 class="service__title">Сервис и поддержка</h3>
+            <div class="service__menu">
+              <ul class="service__nav">
+                <li class="service__item">
+                  <a class="service__link" href="dostavka-i-oplata.html"
+                    >Доставка и оплата</a
+                  >
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="skidki.html">Скидки и акции</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="#">Личный кабинет</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="o-mafii.html">О мафии</a>
+                </li>
+                <li class="service__item">
+                  <a class="service__link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--END Футер меню -->
+
+          <!-- Футер контакты -->
+          <div class="footer__contacts">
+            <a href="tel:+80647652334" class="contacts__number"
+              >8 (064) 765-23-34</a
+            >
+            <div class="contacts__works-time">ежедневно, 10:00-22:00</div>
+            <a href="mailto:vlad@htmlbook.ru" class="contacts__email"
+              >shop@mafia-rekvizit.ru</a
+            >
+            <div class="contacts__social-links">
+              <a href="https://vk.com/" target="_blank" rel="nofollow"
+                ><img src="images/dest/vk.svg" alt="vk" title="vk"
+              /></a>
+              <a href="https://instagram.com/" target="_blank" rel="nofollow"
+                ><img
+                  src="images/dest/instagram.svg"
+                  alt="instagram"
+                  title="instagram"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="nofollow"
+                ><img
+                  src="images/dest/youtube.svg"
+                  alt="youtube"
+                  title="youtube"
+              /></a>
+            </div>
+          </div>
+          <!--END Футер контакты -->
+
+          <!-- Футер форма ос -->
+          <div class="footer__form">
+            <div class="form__title">
+              Скидка 10% на первую покупку за подписку
+            </div>
+            <form class="form" action="mail.php" method="post" name="form">
+              <input class="input-text" placeholder="Email" name="email" type="email" required/>
+              <input class="btn" id="submit" value="Подписаться" type="submit"/>
+            </form>
+            <div class="form__politica">
+              <p>Нажимая кнопку “Подписаться” вы соглашаетесь</p>
+              <p>
+                с
+                <a href="#" class="js-open-modal" data-modal="1"
+                  >Политикой конфиденциальности</a
+                >
+                сайта
+              </p>
+            </div>
+            <div class="form__payment">
+              <img
+                src="images/dest/payment.svg"
+                alt="payment"
+                title="payment"
+              />
+            </div>
+          </div>
+          <!--END Футер форма ос -->
+        </div>
+      </div>
+    </footer>
+    <!-- END Футер -->
+
+    <!-- Якрорь -->
+    <div class="toTop"><img src="images/dest/up.png" alt="" /></div>
+    <!--END Якрорь -->
+
+    <!-- Модальное оконо -->
+    <div class="modal" data-modal="1">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <h3 class="modal__title">Политика конфиденциальности</h3>
+      <br />
+      <div class="modal__text">
+        <div>
+          <h4>Общие положения</h4>
+          <br />
+          <p>
+            Некоторые объекты, размещенные на сайте, являются интеллектуальной
+            собственностью компании "Mafia-Rekvizit". Использование таких
+            объектов установлено действующим законодательством РФ.
+          </p>
+          <p>
+            На сайте "Mafia-Rekvizit" имеются ссылки, позволяющие перейти на
+            другие сайты. Компания "Mafia-Rekvizit" не несет ответственности за
+            сведения, публикуемые на этих сайтах и предоставляет ссылки на них
+            только в целях обеспечения удобства для посетителей своего сайта.
+          </p>
+        </div>
+        <br />
+
+        <div>
+          <h4>Личные сведения и безопасность</h4>
+          <br />
+          <p>
+            Компания "Mafia-Rekvizit" гарантирует, что никакая полученная от Вас
+            информация никогда и ни при каких условиях не будет предоставлена
+            третьим лицам, за исключением случаев, предусмотренных действующим
+            законодательством Российской Федерации.
+          </p>
+          <p>
+            В определенных обстоятельствах компания "Mafia-Rekvizit" может
+            попросить Вас зарегистрироваться и предоставить личные сведения.
+            Предоставленная информация используется исключительно в служебных
+            целях, а также для предоставления доступа к специальной информации.
+          </p>
+          <p>
+            Чтобы обеспечить Вас информацией определенного рода, компания
+            "Mafia-Rekvizit" с Вашего явного согласия может присылать на
+            указанный при регистрации адрес электронный почты информационные
+            сообщения. В любой момент Вы можете изменить тематику такой рассылки
+            или отказаться от нее.
+          </p>
+          <p>
+            Как и многие другие сайты, "Mafia-Rekvizit" использует технологию
+            cookie, которая может быть использована для продвижения нашего
+            продукта и измерения эффективности рекламы. Кроме того, с помощь
+            этой технологии "Mafia-Rekvizit" настраивается на работу лично с
+            Вами. В частности без этой технологии невозможна работа с
+            авторизацией в панели управления.
+          </p>
+          <p>
+            Сведения на данном сайте имеют чисто информативный характер, в них
+            могут быть внесены любые изменения без какого-либо предварительного
+            уведомления.
+          </p>
+          <p>
+            Чтобы отказаться от дальнейших коммуникаций с нашей компанией,
+            изменить или удалить свою личную информацию, напишите нам через
+            форму обратной связи.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+    <!--END Модальное оконо -->
+
+    <div id="cookie_notification">
+      <p>
+        Для улучшения работы сайта и его взаимодействия с пользователями мы
+        используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете
+        использование cookie-файлов. Вы всегда можете отключить файлы cookie в
+        настройках Вашего браузера.
+      </p>
+      <button class="button cookie_accept">Принять</button>
+    </div>
+
+    <!-- Подключаю скрипты проекта -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
-

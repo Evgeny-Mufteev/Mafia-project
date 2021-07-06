@@ -69,14 +69,14 @@
 							</ul>
                         </nav>
 
-						<div class="cart" id="nav">
+						<div class="cart">
 							<a href="#" class="cart__img">
 								<img src="images/dest/cart.svg" alt="Корзина" title="Корзина">
 								<span class="cart__img-number">21</span>
 							</a>
 							<div class="cart__info">
 								<p>Корзина</p>
-								<p>144 323 руб.<div class=""></div></p>
+								<p>144 323 руб.</p>
 							</div>
 						</div>
 					</div>
@@ -95,7 +95,7 @@
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li><a class="breadcrumbs__links" href="index.html">Главная</a></li>
-                            <li><a class="breadcrumbs__links" href="##">></a></li>
+                            <li><a class="breadcrumbs__links" href="#">></a></li>
                             <li><a class="breadcrumbs__links" href="catalog.html">Каталог</a></li>
                         </ul>
                     </div>
@@ -322,9 +322,9 @@
                     <!-- Футер форма ос -->
                     <div class="footer__form">
                         <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="" method="post" name="form" >
-                            <input class="input-text" placeholder="Email"></input>
-                            <input class="btn" id="submit" value="Подписаться" type="submit" />
+                        <form class="form" action="mail.php" method="post" name="form">
+                            <input class="input-text" placeholder="Email" name="email" type="email" required/>
+                            <input class="btn" id="submit" value="Подписаться" type="submit"/>
                         </form>
                         <div class="form__politica">
                             <p>Нажимая кнопку “Подписаться” вы соглашаетесь</p>

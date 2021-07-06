@@ -69,14 +69,14 @@
 							</ul>
                         </nav>
 
-						<div class="cart" id="nav">
+						<div class="cart">
 							<a href="#" class="cart__img">
 								<img src="images/dest/cart.svg" alt="Корзина" title="Корзина">
 								<span class="cart__img-number">21</span>
 							</a>
 							<div class="cart__info">
 								<p>Корзина</p>
-								<p>144 323 руб.<div class=""></div></p>
+								<p>144 323 руб.</p>
 							</div>
 						</div>
 					</div>
@@ -95,9 +95,9 @@
                     <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li><a class="breadcrumbs__links" href="index.html">Главная</a></li>
-                            <li><a class="breadcrumbs__links" href="##">></a></li>
+                            <li><a class="breadcrumbs__links" href="#">></a></li>
                             <li><a class="breadcrumbs__links" href="catalog.html">Каталог</a></li>
-                            <li><a class="breadcrumbs__links" href="##">></a></li>
+                            <li><a class="breadcrumbs__links" href="#">></a></li>
                             <li><a class="breadcrumbs__links" href="Tablecloths.html">Скатерти</a></li>
                         </ul>
                     </div>
@@ -114,13 +114,13 @@
                     <aside class="aside aside__categories">
                         <h2 class="aside__title">Каталог товаров</h2>
                         <ul class="aside__list">
-                            <a class="aside__link" href="Mafia_kits.html"><li class="aside__item">Наборы для мафии</li></a>
-                            <a class="aside__link" href="Masks.html"><li class="aside__item">Маски</li></a>
-                            <a class="aside__link" href="Numbers.html"><li class="aside__item">Номерки</li></a>
-                            <a class="aside__link" href="Cards.html"><li class="aside__item">Карты</li></a>
-                            <a class="aside__link" href="Tablecloths.html"><li class="aside__item">Скатерти</li></a>
-                            <a class="aside__link" href="Nameplates.html"><li class="aside__item">Таблички</li></a>
-                            <a class="aside__link" href="Souvenirs.html"><li class="aside__item">Сувениры</li></a>
+                            <li class="aside__item"><a class="aside__link" href="Mafia_kits.html">Наборы для мафии</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Masks.html">Маски</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Numbers.html">Номерки</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Cards.html">Карты</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Tablecloths.html">Скатерти</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Nameplates.html">Таблички</a></li>
+                            <li class="aside__item"><a class="aside__link" href="Souvenirs.html">Сувениры</a></li>
                         </ul>
                     </aside>
                     <!-- END Каталог -->
@@ -347,9 +347,9 @@
                     <!-- Футер форма ос -->
                     <div class="footer__form">
                         <div class="form__title">Скидка 10% на первую покупку за подписку</div>
-                        <form class="form" action="" method="post" name="form" >
-                            <input class="input-text" placeholder="Email"></input>
-                            <input class="btn" id="submit" value="Подписаться" type="submit" />
+                        <form class="form" action="mail.php" method="post" name="form">
+                            <input class="input-text" placeholder="Email" name="email" type="email" required/>
+                            <input class="btn" id="submit" value="Подписаться" type="submit"/>
                         </form>
                         <div class="form__politica">
                             <p>Нажимая кнопку “Подписаться” вы соглашаетесь</p>
