@@ -178,15 +178,26 @@
         text-decoration: none;
         color: #12212D;
         padding-right: 31px;
-        border-right: 1px solid #B7BCC0;
+        // border-right: 1px solid #B7BCC0;
         font-size: 16px;
       }
 
       .nubmerandlk__lk {
+        position: relative;
         text-decoration: none;
         color: #12212D;
         padding-left: 20px;
         font-size: 16px;
+        &::before {
+        content: "";
+        width: 1px;
+        height: 42px;
+        background: #b7bcc0;
+        position: absolute;
+        left: -5px;
+        top: -15px;
+        cursor: default;
+        }
       }
 
 }
@@ -1722,6 +1733,46 @@ p.politics {
 }
 /*===========================================================END Страница Контакты====================================================================*/
 
+// Страницы контента доставка и оплата, о мафии
+.content__text p {
+    font-family: Montserrat;
+    color: #3c3c3c;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content__links {
+    color: #09459F;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.content__text {
+    background-color: #fff;
+    padding: 24px;
+}
+
+.content__text h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #3c3c3c;
+}
+
+.content__img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content__img img {
+    max-width: 100%;
+    height: auto;
+}
+// END Страница доставка и оплата
+
 
 
 
@@ -1996,6 +2047,10 @@ p.politics {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .nubmerandlk__lk::before  {
+    display: none;
+  }
 
   p.politics {
     text-align: center;
