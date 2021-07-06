@@ -1771,10 +1771,29 @@ p.politics {
     max-width: 100%;
     height: auto;
 }
+
+.center {
+  text-align: center;
+}
 // END Страница доставка и оплата
 
 
+// Страница скидки
 
+.skidki__wrap {
+    margin: 30px 0;
+}
+
+.skidki__wrap {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+// END страница скидки
 
 
 // Адаптив
@@ -1870,6 +1889,11 @@ p.politics {
 
 
 @media only screen and (max-width: 1023px) {
+
+  .skidki__img img {
+    max-width: 100%;
+    height: auto;
+  }
 
   .btn__form {
     padding: 11px 35px;
@@ -2196,6 +2220,11 @@ p.politics {
 }
 
 @media only screen and (max-width: 641px) {
+
+  .skidki__wrap {
+    flex-direction: column;
+    text-align: center;
+}
 
   .page__title .breadcrumbs .breadcrumbs__list .goods__breadcrumbs__links {
     color: #313131;
